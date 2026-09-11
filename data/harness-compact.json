@@ -405,7 +405,58 @@
    "merged": "2026-06-08T19:34:36+00:00",
    "summary": "V26 HR Module: Applicant Phone Number Validation on Order More"
   },
-  "intakeVersion": null
+  "intakeVersion": null,
+  "attempts": {
+   "v2-try1": {
+    "process": "v2",
+    "from": null,
+    "feedbackSha256": null,
+    "taskSha256": "78f36e11c6fb31bbf53794e7d71bfe4112ea1b16c3c4c99b220640ea887cb671",
+    "agent": {
+     "started_at": "2026-09-11T15:42:33Z",
+     "finished_at": "2026-09-11T15:50:48Z",
+     "duration_ms": 487303,
+     "duration_api_ms": 279209,
+     "num_turns": 35,
+     "total_cost_usd": 1.60981375,
+     "session_id": "1790de1f-0eb4-4128-b437-9f000be304dc",
+     "is_error": false,
+     "subtype": "success",
+     "agent_exit": "0",
+     "image": "t3-sandbox:538"
+    },
+    "gate": {
+     "repro_script": true,
+     "repro_before": "REPRO: FAIL",
+     "repro_after": "REPRO: PASS",
+     "acceptance": true,
+     "report": true,
+     "acceptance_items": {
+      "verified": 7,
+      "unobservable": 0,
+      "not_done": 0
+     },
+     "passed": true
+    },
+    "patch_bytes": 2204,
+    "patch_sha256": "cc13efb11ddb4afcc46a262a2d3e499b72aaab48ebe716af0373bc62f97f9a91",
+    "files_changed": [
+     "MVP-S/v26/customers/modern-order/js/utils.js",
+     "MVP-S/v26/customers/modern-order/js/validators.js"
+    ],
+    "result": {
+     "label": "e1",
+     "passed": 5,
+     "total": 6,
+     "summary": "digits=PASS formatted=PASS country_prefix=PASS eleven_digits=PASS international=FAIL required_empty=PASS | supplementary: short=PASS long=PASS letters=FAIL",
+     "image": "t3-sandbox:538",
+     "finished": "2026-09-11T15:51:30Z",
+     "checkSha256": "2c1960eaa13b67b6f982a3ad4e53be33e95c70b67a1f584a437586140674bb35"
+    },
+    "outcome": "FAIL",
+    "recordedAt": "2026-09-11T15:51:30.947738+00:00"
+   }
+  }
  },
  "CASE-018": {
   "agent": {
