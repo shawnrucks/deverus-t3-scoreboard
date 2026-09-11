@@ -1,4 +1,44 @@
 {
+ "CASE-027": {
+  "agent": {
+   "duration_ms": 836146,
+   "total_cost_usd": 4.807477199999998,
+   "num_turns": 58,
+   "started_at": "2026-09-11T00:47:40Z",
+   "finished_at": "2026-09-11T01:01:29Z"
+  },
+  "files": [
+   "MVP-S/v26/customers/modern-order/js/api.js",
+   "MVP-S/v26/customers/modern-order/js/app.js"
+  ],
+  "patch_bytes": 4247,
+  "base": {
+   "passed": 4,
+   "total": 8,
+   "summary": "us_swifthire_government_id=FAIL international_dedicated_id=FAIL international_legacy_id=PASS international_dedicated_precedence=FAIL us_ssn_regression=PASS empty_id_no_invention=PASS us_review_country_preserves_id=FAIL international_country_preserves_id=PASS"
+  },
+  "human": {
+   "passed": 8,
+   "total": 8,
+   "summary": "us_swifthire_government_id=PASS international_dedicated_id=PASS international_legacy_id=PASS international_dedicated_precedence=PASS us_ssn_regression=PASS empty_id_no_invention=PASS us_review_country_preserves_id=PASS international_country_preserves_id=PASS"
+  },
+  "harness": {
+   "passed": 7,
+   "total": 8,
+   "summary": "us_swifthire_government_id=PASS international_dedicated_id=PASS international_legacy_id=PASS international_dedicated_precedence=PASS us_ssn_regression=PASS empty_id_no_invention=PASS us_review_country_preserves_id=FAIL international_country_preserves_id=PASS"
+  },
+  "batch": "007",
+  "evaluatorNote": null,
+  "humanHours": 0,
+  "meta": {
+   "issue": "OS-6575",
+   "pr": 328,
+   "prTitle": "rehydrate international swifhire address",
+   "merged": "2026-06-18T20:27:45+00:00",
+   "summary": "V26 HR Module: SwiftHire With Review for applicant with Government ID instead of SSN"
+  },
+  "intakeVersion": null
+ },
  "CASE-030": {
   "agent": {
    "duration_ms": 671765,
