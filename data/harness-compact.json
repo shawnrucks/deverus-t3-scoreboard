@@ -38,6 +38,45 @@
   },
   "intakeVersion": null
  },
+ "CASE-028": {
+  "agent": {
+   "duration_ms": 1609167,
+   "total_cost_usd": 12.700974749999995,
+   "num_turns": 112,
+   "started_at": "2026-09-11T00:21:00Z",
+   "finished_at": "2026-09-11T00:47:40Z"
+  },
+  "files": [
+   "MVP-S/v26/customers/report-management/applicant-detail.cfm"
+  ],
+  "patch_bytes": 4423,
+  "base": {
+   "passed": 4,
+   "total": 7,
+   "summary": "detail_page_renders=PASS report_history_shown_when_configured=FAIL history_rows_carry_date_and_acting_user=FAIL inactive_rows_excluded=FAIL hidden_without_the_configuration_key=PASS empty_history_handled=PASS unrelated_details_preserved=PASS | supplementary: history_detail_rendered_safely=FAIL"
+  },
+  "human": {
+   "passed": 7,
+   "total": 7,
+   "summary": "detail_page_renders=PASS report_history_shown_when_configured=PASS history_rows_carry_date_and_acting_user=PASS inactive_rows_excluded=PASS hidden_without_the_configuration_key=PASS empty_history_handled=PASS unrelated_details_preserved=PASS | supplementary: history_detail_rendered_safely=FAIL"
+  },
+  "harness": {
+   "passed": 5,
+   "total": 7,
+   "summary": "detail_page_renders=PASS report_history_shown_when_configured=FAIL history_rows_carry_date_and_acting_user=FAIL inactive_rows_excluded=PASS hidden_without_the_configuration_key=PASS empty_history_handled=PASS unrelated_details_preserved=PASS | supplementary: history_detail_rendered_safely=FAIL"
+  },
+  "batch": "007",
+  "evaluatorNote": null,
+  "humanHours": 4,
+  "meta": {
+   "issue": "OS-6583",
+   "pr": 326,
+   "prTitle": "add the report history in a collapsable card on the report view",
+   "merged": "2026-06-18T20:28:44+00:00",
+   "summary": "V26 HR Module: Client-side Activity History"
+  },
+  "intakeVersion": null
+ },
  "CASE-029": {
   "agent": {
    "duration_ms": 823745,
