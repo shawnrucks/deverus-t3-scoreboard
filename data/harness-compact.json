@@ -1072,7 +1072,64 @@
      "checkSha256": "9c151fd69943411e2bd79e3b1c00e94f294b31331dc820133d32ffd705f26be9"
     },
     "outcome": "FAIL",
-    "recordedAt": "2026-09-11T13:52:13.020330+00:00"
+    "review": {
+     "verdict": "CHANGES_REQUESTED",
+     "findings": 1,
+     "blocking_or_major": 1,
+     "duration_ms": 262140,
+     "total_cost_usd": 1.17001625,
+     "num_turns": 18
+    },
+    "recordedAt": "2026-09-11T13:56:42.969022+00:00"
+   },
+   "v2-try2": {
+    "process": "v2",
+    "from": "v2-try1",
+    "feedbackSha256": "d931216012af14a5c7b03684714360dc83817e674539e916077642a435ff2292",
+    "taskSha256": "351e90f6c1b7626dc930e13fd5b01a2f33127397dcf59ae3323a5f07fc439c1e",
+    "agent": {
+     "started_at": "2026-09-11T13:56:43Z",
+     "finished_at": "2026-09-11T14:08:12Z",
+     "duration_ms": 685299,
+     "duration_api_ms": 682268,
+     "num_turns": 62,
+     "total_cost_usd": 4.415760499999999,
+     "session_id": "becee2d1-412f-40d3-b071-4a58f0db9958",
+     "is_error": false,
+     "subtype": "success",
+     "agent_exit": "0",
+     "image": "t3-sandbox:538"
+    },
+    "gate": {
+     "repro_script": true,
+     "repro_before": "REPRO: FAIL",
+     "repro_after": "REPRO: PASS",
+     "acceptance": true,
+     "report": true,
+     "acceptance_items": {
+      "verified": 12,
+      "unobservable": 0,
+      "not_done": 0
+     },
+     "passed": true
+    },
+    "patch_bytes": 12633,
+    "patch_sha256": "4e109d945f083e2b7db8daa1707dd283d400887124c0fc993acfee0905424989",
+    "files_changed": [
+     "MVP-S/v26/customers/my-account/api/update-profile.cfm",
+     "MVP-S/v26/customers/my-account/includes/edit-user.cfm"
+    ],
+    "result": {
+     "label": "e1",
+     "passed": 5,
+     "total": 11,
+     "summary": "branch_user_list_shows_that_branch_only=FAIL nested_branch_user_list_works=FAIL unrelated_tenant_list_denied=FAIL edit_form_opens_for_a_branch_user=FAIL edit_form_denied_for_a_foreign_user=FAIL own_account_edit_still_persists=PASS branch_user_edit_persists=PASS nested_branch_user_edit_persists=FAIL foreign_tenant_edit_denied_without_write=PASS invalid_identifier_fails_without_write=PASS pages_render_without_errors=PASS",
+     "image": "t3-sandbox:538",
+     "finished": "2026-09-11T14:08:21Z",
+     "checkSha256": "9c151fd69943411e2bd79e3b1c00e94f294b31331dc820133d32ffd705f26be9"
+    },
+    "outcome": "FAIL",
+    "recordedAt": "2026-09-11T14:08:21.485351+00:00"
    }
   }
  },
