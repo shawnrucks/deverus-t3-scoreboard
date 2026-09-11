@@ -1,4 +1,44 @@
 {
+ "CASE-029": {
+  "agent": {
+   "duration_ms": 823745,
+   "total_cost_usd": 6.34312665,
+   "num_turns": 56,
+   "started_at": "2026-09-11T00:07:13Z",
+   "finished_at": "2026-09-11T00:21:00Z"
+  },
+  "files": [
+   "MVP-S/v26/customers/my-account/api/update-profile.cfm",
+   "MVP-S/v26/customers/my-account/includes/edit-user.cfm"
+  ],
+  "patch_bytes": 11334,
+  "base": {
+   "passed": 5,
+   "total": 11,
+   "summary": "branch_user_list_shows_that_branch_only=FAIL nested_branch_user_list_works=FAIL unrelated_tenant_list_denied=FAIL edit_form_opens_for_a_branch_user=FAIL edit_form_denied_for_a_foreign_user=FAIL own_account_edit_still_persists=PASS branch_user_edit_persists=PASS nested_branch_user_edit_persists=PASS foreign_tenant_edit_denied_without_write=FAIL invalid_identifier_fails_without_write=PASS pages_render_without_errors=PASS"
+  },
+  "human": {
+   "passed": 11,
+   "total": 11,
+   "summary": "branch_user_list_shows_that_branch_only=PASS nested_branch_user_list_works=PASS unrelated_tenant_list_denied=PASS edit_form_opens_for_a_branch_user=PASS edit_form_denied_for_a_foreign_user=PASS own_account_edit_still_persists=PASS branch_user_edit_persists=PASS nested_branch_user_edit_persists=PASS foreign_tenant_edit_denied_without_write=PASS invalid_identifier_fails_without_write=PASS pages_render_without_errors=PASS"
+  },
+  "harness": {
+   "passed": 5,
+   "total": 11,
+   "summary": "branch_user_list_shows_that_branch_only=FAIL nested_branch_user_list_works=FAIL unrelated_tenant_list_denied=FAIL edit_form_opens_for_a_branch_user=FAIL edit_form_denied_for_a_foreign_user=FAIL own_account_edit_still_persists=PASS branch_user_edit_persists=PASS nested_branch_user_edit_persists=FAIL foreign_tenant_edit_denied_without_write=PASS invalid_identifier_fails_without_write=PASS pages_render_without_errors=PASS"
+  },
+  "batch": "007",
+  "evaluatorNote": null,
+  "humanHours": 4,
+  "meta": {
+   "issue": "OS-6569",
+   "pr": 329,
+   "prTitle": "Lucee/OS-6569 branch user edit",
+   "merged": "2026-06-19T17:34:07+00:00",
+   "summary": "V26 HR Module: Restore V09 parity for ability to"
+  },
+  "intakeVersion": null
+ },
  "CASE-031": {
   "agent": {
    "duration_ms": 778974,
