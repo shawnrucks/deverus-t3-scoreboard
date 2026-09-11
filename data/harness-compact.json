@@ -1101,6 +1101,55 @@
     },
     "outcome": "FAIL",
     "recordedAt": "2026-09-11T14:56:39.599084+00:00"
+   },
+   "v3-try1": {
+    "process": "v3",
+    "from": null,
+    "feedbackSha256": null,
+    "taskSha256": "08573288da6f262fcb62cd3bf3dab2cc25f06a9e6c8b82dd231b8264bb44b3c5",
+    "agent": {
+     "started_at": "2026-09-11T20:02:55Z",
+     "finished_at": "2026-09-11T20:14:40Z",
+     "duration_ms": 699838,
+     "duration_api_ms": 696557,
+     "num_turns": 41,
+     "total_cost_usd": 2.946626300000001,
+     "session_id": "2590f607-c97a-4ea5-b1b6-bd61e24af1a9",
+     "is_error": false,
+     "subtype": "success",
+     "agent_exit": "0",
+     "image": "t3-sandbox:538"
+    },
+    "gate": {
+     "repro_script": true,
+     "repro_before": "REPRO: FAIL",
+     "repro_after": "REPRO: PASS",
+     "acceptance": true,
+     "report": true,
+     "acceptance_items": {
+      "verified": 9,
+      "unobservable": 0,
+      "not_done": 0
+     },
+     "passed": true
+    },
+    "patch_bytes": 2683,
+    "patch_sha256": "636a58c239153c0e6dae2a61aeb1d10d8a5721bd7cc08f1766a5a0df3cb34722",
+    "files_changed": [
+     "MVP-S/v26/customers/modern-order/api/custom-search-config.cfm",
+     "MVP-S/v26/customers/modern-order/api/includes/modern-order-empty-item-helpers.cfm"
+    ],
+    "result": {
+     "label": "e1",
+     "passed": 1,
+     "total": 9,
+     "summary": "letter_config_requires_no_row_address=FAIL letter_custom_field_still_required=FAIL submission_helper_requires_no_row_address_for_letter=FAIL county_requirements_preserved=FAIL state_requirements_preserved=FAIL international_requirements_preserved=FAIL i9_requirements_preserved=PASS secondary_requirements_api_has_no_row_address_for_letter=FAIL renderer_emits_no_required_address_controls_for_letter=FAIL",
+     "image": "t3-sandbox:538",
+     "finished": "2026-09-11T20:14:50Z",
+     "checkSha256": "116747677a8231669a0d9ac95399f767782c44955b3947bcd90ffa6c42c112fa"
+    },
+    "outcome": "FAIL",
+    "recordedAt": "2026-09-11T20:14:50.140101+00:00"
    }
   }
  },
