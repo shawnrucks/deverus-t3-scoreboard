@@ -790,7 +790,58 @@
    "merged": "2026-06-19T17:34:32+00:00",
    "summary": "V26 HR Module: Inquiry to see if the regular Search feature can be more intuitive"
   },
-  "intakeVersion": null
+  "intakeVersion": null,
+  "attempts": {
+   "v2-try1": {
+    "process": "v2",
+    "from": null,
+    "feedbackSha256": null,
+    "taskSha256": "efb1b66f996ff269335129b24ce5a2bdb19f01d824b826e592cd424843eec758",
+    "agent": {
+     "started_at": "2026-09-11T12:15:30Z",
+     "finished_at": "2026-09-11T12:28:33Z",
+     "duration_ms": 778763,
+     "duration_api_ms": 774984,
+     "num_turns": 61,
+     "total_cost_usd": 4.947353250000002,
+     "session_id": "0f188858-57b7-46b0-974d-8244a7d1b313",
+     "is_error": false,
+     "subtype": "success",
+     "agent_exit": "0",
+     "image": "t3-sandbox:538"
+    },
+    "gate": {
+     "repro_script": true,
+     "repro_before": "REPRO: FAIL",
+     "repro_after": "REPRO: PASS",
+     "acceptance": true,
+     "report": true,
+     "acceptance_items": {
+      "verified": 9,
+      "unobservable": 1,
+      "not_done": 1
+     },
+     "passed": false
+    },
+    "patch_bytes": 7169,
+    "patch_sha256": "bd64c18faa47b6e301150faf254e34d04fd98476598225b922d56ba88d9e7880",
+    "files_changed": [
+     "Components/CFCTAGS/system/reportManagement/clientStatus.cfc",
+     "MVP-S/v26/customers/shared/api/search-applicants.cfm"
+    ],
+    "result": {
+     "label": "e1",
+     "passed": 7,
+     "total": 7,
+     "summary": "typeahead_first_last_finds_the_applicant=PASS results_page_first_last_finds_the_applicant=PASS last_comma_first_still_works=PASS extra_whitespace_tolerated=PASS one_name_search_preserved=PASS no_cross_tenant_or_cancelled_results=PASS quotes_and_injection_stay_data=PASS",
+     "image": "t3-sandbox:538",
+     "finished": "2026-09-11T12:28:43Z",
+     "checkSha256": "15632fac4540e01a31593a0e9584248db534d5f96ab59820c3a86069851696bd"
+    },
+    "outcome": "PASS",
+    "recordedAt": "2026-09-11T12:28:43.599001+00:00"
+   }
+  }
  },
  "CASE-028": {
   "agent": {
