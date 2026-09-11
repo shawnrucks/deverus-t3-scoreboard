@@ -3007,6 +3007,57 @@
    "merged": null,
    "summary": null
   },
-  "intakeVersion": null
+  "intakeVersion": null,
+  "attempts": {
+   "v2-try1": {
+    "process": "v2",
+    "from": null,
+    "feedbackSha256": null,
+    "taskSha256": "800708246645d3a763dfdd0d32cd6b91785e4d4105cebab90437ccbf4cd706f2",
+    "agent": {
+     "started_at": "2026-09-11T18:18:35Z",
+     "finished_at": "2026-09-11T18:36:46Z",
+     "duration_ms": 1084562,
+     "duration_api_ms": 1077269,
+     "num_turns": 70,
+     "total_cost_usd": 6.856865649999999,
+     "session_id": "b82e828d-285f-4655-a0e2-411eed5af1ea",
+     "is_error": false,
+     "subtype": "success",
+     "agent_exit": "0",
+     "image": "t3-sandbox:538"
+    },
+    "gate": {
+     "repro_script": true,
+     "repro_before": "REPRO: FAIL",
+     "repro_after": "REPRO: PASS",
+     "acceptance": true,
+     "report": true,
+     "acceptance_items": {
+      "verified": 8,
+      "unobservable": 0,
+      "not_done": 0
+     },
+     "passed": true
+    },
+    "patch_bytes": 5320,
+    "patch_sha256": "cb262ee6be78d943e0f486addbd2076b7c138a19b8eca48d63637adeb5fdc681",
+    "files_changed": [
+     "Components/CFCTAGS/system/frameworks/dataprovider/display/nbdata/displaycriminal.cfc",
+     "Components/CFCTAGS/system/frameworks/dataprovider/display/superInstantCriminal/displaycriminal.cfc"
+    ],
+    "result": {
+     "label": "e1",
+     "passed": 3,
+     "total": 6,
+     "summary": "qa_page_renders_all_three_records=PASS matching_county_search_identified_by_id=FAIL matching_search_id_is_a_link=FAIL alias_name_search_does_not_count=PASS statewide_search_matches_record_in_that_state=FAIL no_cross_record_leakage=PASS",
+     "image": "t3-sandbox:538",
+     "finished": "2026-09-11T18:36:53Z",
+     "checkSha256": "8b177c75f53e6b7b6b51e9b73a78b75e753cbae2c202923fad8525d998e86764"
+    },
+    "outcome": "FAIL",
+    "recordedAt": "2026-09-11T18:36:53.994388+00:00"
+   }
+  }
  }
 }
