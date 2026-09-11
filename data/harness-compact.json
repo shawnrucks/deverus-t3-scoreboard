@@ -1,4 +1,44 @@
 {
+ "CASE-012": {
+  "agent": {
+   "duration_ms": 1056854,
+   "total_cost_usd": 7.9067715000000005,
+   "num_turns": 93,
+   "started_at": "2026-09-11T04:19:15Z",
+   "finished_at": "2026-09-11T04:36:50Z"
+  },
+  "files": [
+   "MVP-S/v26/customers/modern-order/api/required-fields.cfm",
+   "MVP-S/v26/customers/modern-order/js/app.js"
+  ],
+  "patch_bytes": 4344,
+  "base": {
+   "passed": 2,
+   "total": 8,
+   "summary": "numbered_i3_drug_code_requires_the_full_profile=FAIL package_i3_drug_code_requires_the_full_profile=FAIL bundle_i3_drug_code_requires_the_full_profile=FAIL custom_i3_drug_code_requires_the_full_profile=FAIL phone_requirement_follows_the_client_setting=FAIL escreen_drug_code_keeps_its_own_set=PASS i3_reason_defaults_to_pre_employment=PASS labcorp_default_reason_matches_an_option_value=FAIL"
+  },
+  "human": {
+   "passed": 8,
+   "total": 8,
+   "summary": "numbered_i3_drug_code_requires_the_full_profile=PASS package_i3_drug_code_requires_the_full_profile=PASS bundle_i3_drug_code_requires_the_full_profile=PASS custom_i3_drug_code_requires_the_full_profile=PASS phone_requirement_follows_the_client_setting=PASS escreen_drug_code_keeps_its_own_set=PASS i3_reason_defaults_to_pre_employment=PASS labcorp_default_reason_matches_an_option_value=PASS"
+  },
+  "harness": {
+   "passed": 2,
+   "total": 8,
+   "summary": "numbered_i3_drug_code_requires_the_full_profile=FAIL package_i3_drug_code_requires_the_full_profile=FAIL bundle_i3_drug_code_requires_the_full_profile=FAIL custom_i3_drug_code_requires_the_full_profile=FAIL phone_requirement_follows_the_client_setting=FAIL escreen_drug_code_keeps_its_own_set=PASS i3_reason_defaults_to_pre_employment=PASS labcorp_default_reason_matches_an_option_value=FAIL"
+  },
+  "batch": "003",
+  "evaluatorNote": null,
+  "humanHours": 18,
+  "meta": {
+   "issue": "OS-6514",
+   "pr": 282,
+   "prTitle": "Making sure if I3 drugs are ordered the follow v09 parity",
+   "merged": "2026-05-31T15:13:09+00:00",
+   "summary": "V26 HR Module: i3 drug screens requirements and pre-pop of Reason for Test are incorrect in New HR"
+  },
+  "intakeVersion": null
+ },
  "CASE-013": {
   "agent": {
    "duration_ms": 425317,
