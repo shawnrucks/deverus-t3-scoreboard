@@ -36,6 +36,45 @@
   },
   "intakeVersion": null
  },
+ "CASE-021": {
+  "agent": {
+   "duration_ms": 828910,
+   "total_cost_usd": 4.27839,
+   "num_turns": 40,
+   "started_at": "2026-09-11T02:21:58Z",
+   "finished_at": "2026-09-11T02:35:50Z"
+  },
+  "files": [
+   "MVP-S/v09/INCLUDES/Order/orderSubmitChargeCreditCardIntial.cfm"
+  ],
+  "patch_bytes": 2263,
+  "base": {
+   "passed": 3,
+   "total": 5,
+   "summary": "real_placement_reaches_gateway_authorization=PASS authorization_includes_sales_tax=FAIL authorization_covers_a_la_carte_row_plus_tax=FAIL no_charge_client_never_authorizes=PASS no_page_errors_on_charge_path=PASS | supplementary: hostile_understated_browser_totals_ignored=FAIL hostile_overstated_browser_totals_ignored=FAIL"
+  },
+  "human": {
+   "passed": 5,
+   "total": 5,
+   "summary": "real_placement_reaches_gateway_authorization=PASS authorization_includes_sales_tax=PASS authorization_covers_a_la_carte_row_plus_tax=PASS no_charge_client_never_authorizes=PASS no_page_errors_on_charge_path=PASS | supplementary: hostile_understated_browser_totals_ignored=FAIL hostile_overstated_browser_totals_ignored=FAIL"
+  },
+  "harness": {
+   "passed": 5,
+   "total": 5,
+   "summary": "real_placement_reaches_gateway_authorization=PASS authorization_includes_sales_tax=PASS authorization_covers_a_la_carte_row_plus_tax=PASS no_charge_client_never_authorizes=PASS no_page_errors_on_charge_path=PASS | supplementary: hostile_understated_browser_totals_ignored=PASS hostile_overstated_browser_totals_ignored=PASS"
+  },
+  "batch": "005",
+  "evaluatorNote": null,
+  "humanHours": 27,
+  "meta": {
+   "issue": "OS-6555",
+   "pr": 313,
+   "prTitle": "Lucee/OS-6555 cc auth amount lite",
+   "merged": "2026-06-10T20:59:30+00:00",
+   "summary": "V26 HR Module: Paypal Authorization Amount does not match final order price, resulting in"
+  },
+  "intakeVersion": null
+ },
  "CASE-023": {
   "agent": {
    "duration_ms": 579366,
