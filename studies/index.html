@@ -1,0 +1,6 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Tier 3 studies</title>
+<style>body{font:15px/1.55 -apple-system,Segoe UI,Helvetica,Arial,sans-serif;max-width:900px;margin:0 auto;padding:24px 16px;color:#1f2937;background:#fafaf9}h1{font-size:22px}a{color:#0f5bd7}li{margin:6px 0}.k{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#6b7280}</style></head><body>
+<div class="k">Tier Three · Developer Quality Assurance</div><h1>Studies and reports</h1><p><a href="../">← Scoreboard</a></p>
+<ul id="list"></ul>
+<script>fetch('list.json').then(r=>r.json()).then(d=>{document.getElementById('list').innerHTML=d.map(x=>`<li><a href="study.html?doc=${encodeURIComponent(x.file)}">${x.title}</a> <span class="k">${x.date||''}</span></li>`).join('')}).catch(()=>{document.getElementById('list').innerHTML='<li>No studies published yet.</li>'});</script>
+</body></html>

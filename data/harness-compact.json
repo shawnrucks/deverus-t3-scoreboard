@@ -1,0 +1,1137 @@
+{
+ "CASE-031": {
+  "agent": {
+   "duration_ms": 778974,
+   "total_cost_usd": 5.25506075,
+   "num_turns": 62,
+   "started_at": "2026-09-10T23:42:55Z",
+   "finished_at": "2026-09-10T23:55:57Z"
+  },
+  "files": [
+   "MVP-S/v26/customers/report-management/applicant-detail.cfm"
+  ],
+  "patch_bytes": 2582,
+  "base": {
+   "passed": 5,
+   "total": 7,
+   "summary": "applicant_detail_renders_for_seeded_reports=PASS package_name_shown_from_report_data=FAIL package_name_follows_the_data_not_a_constant=FAIL report_without_package_shows_no_package_or_empty_label=PASS individual_search_components_are_not_shown_as_the_package=PASS legacy_package_name_gate_respected=PASS existing_detail_fields_unchanged=PASS | supp:package_name_rendered_encoded=FAIL"
+  },
+  "human": {
+   "passed": 7,
+   "total": 7,
+   "summary": "applicant_detail_renders_for_seeded_reports=PASS package_name_shown_from_report_data=PASS package_name_follows_the_data_not_a_constant=PASS report_without_package_shows_no_package_or_empty_label=PASS individual_search_components_are_not_shown_as_the_package=PASS legacy_package_name_gate_respected=PASS existing_detail_fields_unchanged=PASS | supp:package_name_rendered_encoded=FAIL"
+  },
+  "harness": {
+   "passed": 6,
+   "total": 7,
+   "summary": "applicant_detail_renders_for_seeded_reports=PASS package_name_shown_from_report_data=PASS package_name_follows_the_data_not_a_constant=PASS report_without_package_shows_no_package_or_empty_label=PASS individual_search_components_are_not_shown_as_the_package=PASS legacy_package_name_gate_respected=FAIL existing_detail_fields_unchanged=PASS | supp:package_name_rendered_encoded=FAIL"
+  },
+  "batch": "008",
+  "evaluatorNote": null,
+  "humanHours": 1,
+  "meta": {
+   "issue": "OS-6589",
+   "pr": 335,
+   "prTitle": "added package name",
+   "merged": "2026-06-23T19:45:46+00:00",
+   "summary": "V26 HR Module: Add Package Name to Applicant Detail view as in V09"
+  },
+  "intakeVersion": null
+ },
+ "CASE-032": {
+  "agent": {
+   "duration_ms": 438960,
+   "total_cost_usd": 3.5890157500000006,
+   "num_turns": 42,
+   "started_at": "2026-09-10T23:35:32Z",
+   "finished_at": "2026-09-10T23:42:55Z"
+  },
+  "files": [
+   "MVP-S/v26/customers/my-account/includes/activity-report-results.cfm"
+  ],
+  "patch_bytes": 8386,
+  "base": {
+   "passed": 2,
+   "total": 7,
+   "summary": "activity_report_results_render_for_tenant=PASS client_name_column_present_with_value=FAIL applicant_email_column_present_with_value=FAIL applicant_phone_column_present_with_value=FAIL missing_email_and_phone_handled_without_error=FAIL csv_export_includes_the_restored_columns=FAIL existing_columns_options_and_tenant_scope_preserved=PASS"
+  },
+  "human": {
+   "passed": 7,
+   "total": 7,
+   "summary": "activity_report_results_render_for_tenant=PASS client_name_column_present_with_value=PASS applicant_email_column_present_with_value=PASS applicant_phone_column_present_with_value=PASS missing_email_and_phone_handled_without_error=PASS csv_export_includes_the_restored_columns=PASS existing_columns_options_and_tenant_scope_preserved=PASS"
+  },
+  "harness": {
+   "passed": 7,
+   "total": 7,
+   "summary": "activity_report_results_render_for_tenant=PASS client_name_column_present_with_value=PASS applicant_email_column_present_with_value=PASS applicant_phone_column_present_with_value=PASS missing_email_and_phone_handled_without_error=PASS csv_export_includes_the_restored_columns=PASS existing_columns_options_and_tenant_scope_preserved=PASS"
+  },
+  "batch": "008",
+  "evaluatorNote": null,
+  "humanHours": 29,
+  "meta": {
+   "issue": "OS-6574",
+   "pr": 333,
+   "prTitle": "Lucee/OS-6574 activity report parity",
+   "merged": "2026-06-23T19:46:35+00:00",
+   "summary": "V26 HR Module: Activity Report V09 Parity"
+  },
+  "intakeVersion": null
+ },
+ "CASE-033": {
+  "agent": {
+   "duration_ms": 575529,
+   "total_cost_usd": 2.5779153999999993,
+   "num_turns": 40,
+   "started_at": "2026-09-10T23:25:54Z",
+   "finished_at": "2026-09-10T23:35:32Z"
+  },
+  "files": [
+   "MVP-S/v26/customers/modern-dashboard/tour/dashboard-tour.js",
+   "MVP-S/v26/customers/shared/api/notifications.cfm",
+   "MVP-S/v26/customers/shared/includes/header.cfm"
+  ],
+  "patch_bytes": 11261,
+  "base": {
+   "passed": 5,
+   "total": 6,
+   "summary": "header_renders=PASS no_nonfunctional_bell_either_removed_or_shows_real_events=FAIL tour_steps_only_target_existing_elements=PASS no_orphaned_notification_endpoint_or_handler=PASS other_header_controls_preserved=PASS no_page_errors_or_failed_requests=PASS"
+  },
+  "human": {
+   "passed": 6,
+   "total": 6,
+   "summary": "header_renders=PASS no_nonfunctional_bell_either_removed_or_shows_real_events=PASS tour_steps_only_target_existing_elements=PASS no_orphaned_notification_endpoint_or_handler=PASS other_header_controls_preserved=PASS no_page_errors_or_failed_requests=PASS"
+  },
+  "harness": {
+   "passed": 6,
+   "total": 6,
+   "summary": "header_renders=PASS no_nonfunctional_bell_either_removed_or_shows_real_events=PASS tour_steps_only_target_existing_elements=PASS no_orphaned_notification_endpoint_or_handler=PASS other_header_controls_preserved=PASS no_page_errors_or_failed_requests=PASS"
+  },
+  "batch": "008",
+  "evaluatorNote": null,
+  "humanHours": 67,
+  "meta": {
+   "issue": "OS-6596",
+   "pr": 339,
+   "prTitle": "remove notification bell icon",
+   "merged": "2026-07-02T12:23:44+00:00",
+   "summary": "V26 HR Module: Is the Notification bell functional?"
+  },
+  "intakeVersion": null
+ },
+ "CASE-034": {
+  "agent": {
+   "duration_ms": 653184,
+   "total_cost_usd": 3.52118575,
+   "num_turns": 53,
+   "started_at": "2026-09-10T23:14:57Z",
+   "finished_at": "2026-09-10T23:25:54Z"
+  },
+  "files": [
+   "MVP-S/v26/customers/modern-order/js/app.js"
+  ],
+  "patch_bytes": 1870,
+  "base": {
+   "passed": 5,
+   "total": 8,
+   "summary": "order_more_page_loads_with_applicant_from_report=PASS bundle_in_order_more_runs_the_ssn_trace=FAIL trace_addresses_populate_the_county_search=FAIL a_la_carte_ssnt_plus_county_in_order_more_behaves_the_same=FAIL order_more_without_ssnt_does_not_run_a_trace=PASS no_duplicate_trace_calls=PASS new_order_bundle_behavior_unchanged=PASS no_page_errors=PASS"
+  },
+  "human": {
+   "passed": 8,
+   "total": 8,
+   "summary": "order_more_page_loads_with_applicant_from_report=PASS bundle_in_order_more_runs_the_ssn_trace=PASS trace_addresses_populate_the_county_search=PASS a_la_carte_ssnt_plus_county_in_order_more_behaves_the_same=PASS order_more_without_ssnt_does_not_run_a_trace=PASS no_duplicate_trace_calls=PASS new_order_bundle_behavior_unchanged=PASS no_page_errors=PASS"
+  },
+  "harness": {
+   "passed": 7,
+   "total": 8,
+   "summary": "order_more_page_loads_with_applicant_from_report=PASS bundle_in_order_more_runs_the_ssn_trace=PASS trace_addresses_populate_the_county_search=PASS a_la_carte_ssnt_plus_county_in_order_more_behaves_the_same=FAIL order_more_without_ssnt_does_not_run_a_trace=PASS no_duplicate_trace_calls=PASS new_order_bundle_behavior_unchanged=PASS no_page_errors=PASS"
+  },
+  "batch": "008",
+  "evaluatorNote": null,
+  "humanHours": 64,
+  "meta": {
+   "issue": "OS-6526",
+   "pr": 340,
+   "prTitle": "populate address history on a la carte and add more orders",
+   "merged": "2026-07-02T12:24:17+00:00",
+   "summary": "V26 HR Module: SSNT does not appear to fire when Order More option is used with Bundle"
+  },
+  "intakeVersion": null
+ },
+ "CASE-035": {
+  "agent": {
+   "duration_ms": 339815,
+   "total_cost_usd": 1.25024875,
+   "num_turns": 16,
+   "started_at": "2026-09-10T23:09:13Z",
+   "finished_at": "2026-09-10T23:14:57Z"
+  },
+  "files": [
+   "MVP-S/v26/customers/modern-order/js/validators.js"
+  ],
+  "patch_bytes": 2554,
+  "base": {
+   "passed": 3,
+   "total": 8,
+   "summary": "future_year_dob_rejected_on_field_and_blocks_submit=FAIL error_shown_on_dob_field_through_real_validator_path=FAIL too_recent_dob_rejected_per_legacy_max=FAIL implausibly_old_dob_rejected=FAIL valid_dobs_in_existing_formats_accepted=PASS impossible_calendar_date_rejected=FAIL other_validators_and_date_fields_unchanged=PASS no_page_errors=PASS"
+  },
+  "human": {
+   "passed": 8,
+   "total": 8,
+   "summary": "future_year_dob_rejected_on_field_and_blocks_submit=PASS error_shown_on_dob_field_through_real_validator_path=PASS too_recent_dob_rejected_per_legacy_max=PASS implausibly_old_dob_rejected=PASS valid_dobs_in_existing_formats_accepted=PASS impossible_calendar_date_rejected=PASS other_validators_and_date_fields_unchanged=PASS no_page_errors=PASS"
+  },
+  "harness": {
+   "passed": 8,
+   "total": 8,
+   "summary": "future_year_dob_rejected_on_field_and_blocks_submit=PASS error_shown_on_dob_field_through_real_validator_path=PASS too_recent_dob_rejected_per_legacy_max=PASS implausibly_old_dob_rejected=PASS valid_dobs_in_existing_formats_accepted=PASS impossible_calendar_date_rejected=PASS other_validators_and_date_fields_unchanged=PASS no_page_errors=PASS"
+  },
+  "batch": "008",
+  "evaluatorNote": null,
+  "humanHours": 49,
+  "meta": {
+   "issue": "OS-6609",
+   "pr": 343,
+   "prTitle": "dob validation parity",
+   "merged": "2026-07-09T13:48:20+00:00",
+   "summary": "V26 HR Module: Check DOB field validation and compare to V09"
+  },
+  "intakeVersion": null
+ },
+ "CASE-036": {
+  "agent": {
+   "duration_ms": 1147082,
+   "total_cost_usd": 7.427466,
+   "num_turns": 79,
+   "started_at": "2026-09-10T03:56:06Z",
+   "finished_at": "2026-09-10T04:15:08Z"
+  },
+  "files": [
+   "MVP-S/v26/customers/report-management/index.cfm"
+  ],
+  "patch_bytes": 14472,
+  "base": {
+   "passed": 4,
+   "total": 11,
+   "summary": "list_shows_only_this_users_open_requests=PASS bulk_cancel_control_present=FAIL subset_cancel_cancels_exactly_selected=FAIL subset_cancel_uses_real_cancel_api=FAIL select_all_cancels_all_listed_and_nothing_else=FAIL partial_failure_leaves_others_correct=FAIL partial_failure_is_reported=FAIL no_full_reload_per_request=FAIL single_cancel_still_works=PASS reminder_action_intact=PASS no_page_errors=PASS"
+  },
+  "human": {
+   "passed": 11,
+   "total": 11,
+   "summary": "list_shows_only_this_users_open_requests=PASS bulk_cancel_control_present=PASS subset_cancel_cancels_exactly_selected=PASS subset_cancel_uses_real_cancel_api=PASS select_all_cancels_all_listed_and_nothing_else=PASS partial_failure_leaves_others_correct=PASS partial_failure_is_reported=PASS no_full_reload_per_request=PASS single_cancel_still_works=PASS reminder_action_intact=PASS no_page_errors=PASS"
+  },
+  "harness": {
+   "passed": 11,
+   "total": 11,
+   "summary": "list_shows_only_this_users_open_requests=PASS bulk_cancel_control_present=PASS subset_cancel_cancels_exactly_selected=PASS subset_cancel_uses_real_cancel_api=PASS select_all_cancels_all_listed_and_nothing_else=PASS partial_failure_leaves_others_correct=PASS partial_failure_is_reported=PASS no_full_reload_per_request=PASS single_cancel_still_works=PASS reminder_action_intact=PASS no_page_errors=PASS"
+  },
+  "batch": "009",
+  "evaluatorNote": null,
+  "humanHours": 47,
+  "meta": {
+   "issue": "OS-6606",
+   "pr": 344,
+   "prTitle": "Lucee/OS-6606 mass cancel swifthire",
+   "merged": "2026-07-09T13:48:29+00:00",
+   "summary": "V26 HR Module Enhancement: Ability to cancel multiple SwiftHire invites en masse"
+  },
+  "intakeVersion": null
+ },
+ "CASE-037": {
+  "agent": {
+   "duration_ms": 961665,
+   "total_cost_usd": 7.118905000000001,
+   "num_turns": 78,
+   "started_at": "2026-09-10T05:28:16Z",
+   "finished_at": "2026-09-10T05:44:15Z"
+  },
+  "files": [
+   "MVP-R/ADMIN/Researcher/VT-C.cfm",
+   "MVP-R/ADMIN/Researcher/VT-Details.cfm"
+  ],
+  "patch_bytes": 9909,
+  "base": {
+   "passed": 4,
+   "total": 9,
+   "summary": "report_rows_render_without_error=PASS assigned_researcher_shown_per_row=FAIL flag_yes_no_shown_per_row=FAIL both_columns_in_one_report=FAIL unassigned_rows_render_without_invented_researcher=PASS flag_filter_still_narrows_to_flagged_rows=FAIL existing_row_columns_intact=FAIL legacy_report_pages_still_render=PASS no_template_errors_on_any_candidate=PASS"
+  },
+  "human": {
+   "passed": 9,
+   "total": 9,
+   "summary": "report_rows_render_without_error=PASS assigned_researcher_shown_per_row=PASS flag_yes_no_shown_per_row=PASS both_columns_in_one_report=PASS unassigned_rows_render_without_invented_researcher=PASS flag_filter_still_narrows_to_flagged_rows=PASS existing_row_columns_intact=PASS legacy_report_pages_still_render=PASS no_template_errors_on_any_candidate=PASS"
+  },
+  "harness": {
+   "passed": 9,
+   "total": 9,
+   "summary": "report_rows_render_without_error=PASS assigned_researcher_shown_per_row=PASS flag_yes_no_shown_per_row=PASS both_columns_in_one_report=PASS unassigned_rows_render_without_invented_researcher=PASS flag_filter_still_narrows_to_flagged_rows=PASS existing_row_columns_intact=PASS legacy_report_pages_still_render=PASS no_template_errors_on_any_candidate=PASS"
+  },
+  "batch": "009",
+  "evaluatorNote": null,
+  "humanHours": 71,
+  "meta": {
+   "issue": "OS-6249",
+   "pr": 342,
+   "prTitle": "Lucee/OS-6249 Researcher Completion update",
+   "merged": "2026-07-09T13:49:27+00:00",
+   "summary": "Researcher Completion Time Report Enhancement Request"
+  },
+  "intakeVersion": null
+ },
+ "CASE-038": {
+  "agent": {
+   "duration_ms": 383060,
+   "total_cost_usd": 2.62314425,
+   "num_turns": 44,
+   "started_at": "2026-09-10T04:31:03Z",
+   "finished_at": "2026-09-10T04:37:28Z"
+  },
+  "files": [
+   "MVP-S/v26/customers/report-management/index.cfm",
+   "MVP-S/v26/customers/report-management/styles/status.css"
+  ],
+  "patch_bytes": 7547,
+  "base": {
+   "passed": 3,
+   "total": 8,
+   "summary": "inprogress_hover_shows_client_name=FAIL inprogress_hover_shows_email_with_fallback=FAIL inprogress_hover_shows_date_ordered=FAIL inprogress_hover_date_completed_na=FAIL completed_hover_shows_real_date_completed=FAIL hover_content_encoded_not_executable=PASS list_still_renders_cards_and_selection=PASS no_page_errors=PASS"
+  },
+  "human": {
+   "passed": 8,
+   "total": 8,
+   "summary": "inprogress_hover_shows_client_name=PASS inprogress_hover_shows_email_with_fallback=PASS inprogress_hover_shows_date_ordered=PASS inprogress_hover_date_completed_na=PASS completed_hover_shows_real_date_completed=PASS hover_content_encoded_not_executable=PASS list_still_renders_cards_and_selection=PASS no_page_errors=PASS"
+  },
+  "harness": {
+   "passed": 8,
+   "total": 8,
+   "summary": "inprogress_hover_shows_client_name=PASS inprogress_hover_shows_email_with_fallback=PASS inprogress_hover_shows_date_ordered=PASS inprogress_hover_date_completed_na=PASS completed_hover_shows_real_date_completed=PASS hover_content_encoded_not_executable=PASS list_still_renders_cards_and_selection=PASS no_page_errors=PASS"
+  },
+  "batch": "009",
+  "evaluatorNote": null,
+  "humanHours": 46,
+  "meta": {
+   "issue": "OS-6603",
+   "pr": 345,
+   "prTitle": "code added for hover",
+   "merged": "2026-07-09T15:59:12+00:00",
+   "summary": "V26 HR Module: Request to add the report information back when hovering over applicant name in In Progress or Completed"
+  },
+  "intakeVersion": null
+ },
+ "CASE-039": {
+  "agent": {
+   "duration_ms": 991716,
+   "total_cost_usd": 6.077076749999998,
+   "num_turns": 59,
+   "started_at": "2026-09-10T04:37:52Z",
+   "finished_at": "2026-09-10T04:54:23Z"
+  },
+  "files": [
+   "Components/CFCTAGS/system/order/modernOrderDraftMapper.cfc",
+   "MVP-S/v26/customers/modern-order/api/submit-order-from-draft.cfm"
+  ],
+  "patch_bytes": 2784,
+  "base": {
+   "passed": 3,
+   "total": 5,
+   "summary": "client_draft_stays_client=FAIL client_draft_stays_client_even_with_swifthirereview_param=FAIL linked_swifthire_review_draft_stays_swifthirereview=PASS swifthire_review_by_request_uid_unchanged=PASS direct_client_order_builds_without_error=PASS"
+  },
+  "human": {
+   "passed": 5,
+   "total": 5,
+   "summary": "client_draft_stays_client=PASS client_draft_stays_client_even_with_swifthirereview_param=PASS linked_swifthire_review_draft_stays_swifthirereview=PASS swifthire_review_by_request_uid_unchanged=PASS direct_client_order_builds_without_error=PASS"
+  },
+  "harness": {
+   "passed": 3,
+   "total": 5,
+   "summary": "client_draft_stays_client=FAIL client_draft_stays_client_even_with_swifthirereview_param=FAIL linked_swifthire_review_draft_stays_swifthirereview=PASS swifthire_review_by_request_uid_unchanged=PASS direct_client_order_builds_without_error=PASS"
+  },
+  "batch": "009",
+  "evaluatorNote": null,
+  "humanHours": 191,
+  "meta": {
+   "issue": "OS-6556",
+   "pr": 347,
+   "prTitle": "don't mark client draft as swifthirereview",
+   "merged": "2026-07-10T14:59:04+00:00",
+   "summary": "Client Orders Submitted from Draft Incorrectly Assigned swifthirereview Order Type"
+  },
+  "intakeVersion": null,
+  "try2": {
+   "kind": "process retry (same ticket, no feedback, fresh workspace, production image)",
+   "agent": {
+    "started_at": "2026-09-10T09:39:44Z",
+    "finished_at": "2026-09-10T10:07:44Z",
+    "duration_ms": 1680358,
+    "duration_api_ms": 1668611,
+    "num_turns": 85,
+    "total_cost_usd": 9.691768499999998,
+    "session_id": "3ae3a1e2-6f52-4433-80a1-3d074be0860a",
+    "is_error": false,
+    "image": "t3-sandbox:538"
+   },
+   "patch_sha256": "45104a8300b2cb3c505fbc25db38cd33f719156382becdc1dfa40269eadd548c",
+   "patch_bytes": 2808,
+   "files_changed": [
+    "Components/CFCTAGS/system/order/orderStructure.cfc"
+   ],
+   "result": {
+    "label": "try2",
+    "passed": 4,
+    "total": 5,
+    "summary": "client_draft_stays_client=PASS client_draft_stays_client_even_with_swifthirereview_param=PASS linked_swifthire_review_draft_stays_swifthirereview=FAIL swifthire_review_by_request_uid_unchanged=PASS direct_client_order_builds_without_error=PASS",
+    "checkSha256": "82f66d9e1271aa7e47d4e67d7b6c1f9e67fbb51465d9a9f4f9707804b7401467",
+    "image": "t3-sandbox:538",
+    "supplementary": null
+   },
+   "first_try_workspace": "sandbox-cases/CASE-039-try1",
+   "recorded_at": "2026-09-10T10:51:50.145213Z"
+  }
+ },
+ "CASE-040": {
+  "agent": {
+   "duration_ms": 647092,
+   "total_cost_usd": 3.9417934500000005,
+   "num_turns": 47,
+   "started_at": "2026-09-10T04:59:49Z",
+   "finished_at": "2026-09-10T05:10:40Z"
+  },
+  "files": [
+   "MVP-S/v26/customers/report-management/index.cfm"
+  ],
+  "patch_bytes": 2830,
+  "base": {
+   "passed": 5,
+   "total": 6,
+   "summary": "needs_attention_lists_pending_report=PASS no_archive_option_when_list_has_no_completed_report=FAIL archive_option_present_in_completed_list=PASS archive_option_present_when_list_mixes_completed_and_pending=PASS archive_selected_archives_only_completed=PASS no_page_errors=PASS"
+  },
+  "human": {
+   "passed": 6,
+   "total": 6,
+   "summary": "needs_attention_lists_pending_report=PASS no_archive_option_when_list_has_no_completed_report=PASS archive_option_present_in_completed_list=PASS archive_option_present_when_list_mixes_completed_and_pending=PASS archive_selected_archives_only_completed=PASS no_page_errors=PASS"
+  },
+  "harness": {
+   "passed": 6,
+   "total": 6,
+   "summary": "needs_attention_lists_pending_report=PASS no_archive_option_when_list_has_no_completed_report=PASS archive_option_present_in_completed_list=PASS archive_option_present_when_list_mixes_completed_and_pending=PASS archive_selected_archives_only_completed=PASS no_page_errors=PASS"
+  },
+  "batch": "009",
+  "evaluatorNote": null,
+  "humanHours": 24,
+  "meta": {
+   "issue": "OS-6610",
+   "pr": 351,
+   "prTitle": "removed archive option when not applicable",
+   "merged": "2026-07-16T13:35:48+00:00",
+   "summary": "V26 HR Module: Ability to Archive reports should not be displayed unless there is at least 1 Completed Report in the list"
+  },
+  "intakeVersion": null
+ },
+ "CASE-041": {
+  "agent": {
+   "duration_ms": 798179,
+   "total_cost_usd": 4.72503925,
+   "num_turns": 71,
+   "started_at": "2026-09-10T07:14:23Z",
+   "finished_at": "2026-09-10T07:27:39Z"
+  },
+  "files": [
+   "MVP-S/v26/customers/modern-order/index.cfm",
+   "MVP-S/v26/customers/modern-order/js/api.js",
+   "MVP-S/v26/customers/modern-order/js/app.js"
+  ],
+  "patch_bytes": 18848,
+  "base": {
+   "passed": 4,
+   "total": 8,
+   "summary": "ordering_page_loads_with_country_and_ssn_fields=PASS non_us_country_keeps_ssn_field_by_default=FAIL non_us_country_offers_switch_to_government_id=FAIL switching_shows_government_id_in_place_of_ssn=FAIL ssn_format_still_validated_for_non_us=FAIL us_validation_unchanged=PASS returning_to_us_restores_ssn_only=PASS no_page_errors=PASS"
+  },
+  "human": {
+   "passed": 8,
+   "total": 8,
+   "summary": "ordering_page_loads_with_country_and_ssn_fields=PASS non_us_country_keeps_ssn_field_by_default=PASS non_us_country_offers_switch_to_government_id=PASS switching_shows_government_id_in_place_of_ssn=PASS ssn_format_still_validated_for_non_us=PASS us_validation_unchanged=PASS returning_to_us_restores_ssn_only=PASS no_page_errors=PASS"
+  },
+  "harness": {
+   "passed": 7,
+   "total": 8,
+   "summary": "ordering_page_loads_with_country_and_ssn_fields=PASS non_us_country_keeps_ssn_field_by_default=PASS non_us_country_offers_switch_to_government_id=PASS switching_shows_government_id_in_place_of_ssn=PASS ssn_format_still_validated_for_non_us=FAIL us_validation_unchanged=PASS returning_to_us_restores_ssn_only=PASS no_page_errors=PASS"
+  },
+  "batch": "010",
+  "evaluatorNote": null,
+  "humanHours": 142,
+  "meta": {
+   "issue": "OS-6616",
+   "pr": 349,
+   "prTitle": "code added so that if a country other that US is added, tehy have the option to use a governmet id instead",
+   "merged": "2026-07-16T13:35:57+00:00",
+   "summary": "V26-HR If a user selects a country other than US, SSN is not available"
+  },
+  "intakeVersion": null,
+  "try2": {
+   "kind": "process retry (same ticket, no feedback, fresh workspace, production image)",
+   "agent": {
+    "started_at": "2026-09-10T10:08:01Z",
+    "finished_at": "2026-09-10T10:19:39Z",
+    "duration_ms": 693903,
+    "duration_api_ms": 685777,
+    "num_turns": 72,
+    "total_cost_usd": 4.208972750000001,
+    "session_id": "12b3d948-a5cc-4e65-a2c7-e2893fb7d1c8",
+    "is_error": false,
+    "image": "t3-sandbox:538"
+   },
+   "patch_sha256": "576bb5ff6dc769e78928954fb0c01c5974bc373ecb2e990a31daa9df8a4f85f3",
+   "patch_bytes": 13832,
+   "files_changed": [
+    "MVP-S/v26/customers/modern-order/index.cfm",
+    "MVP-S/v26/customers/modern-order/js/api.js",
+    "MVP-S/v26/customers/modern-order/js/app.js",
+    "MVP-S/v26/customers/modern-order/styles/main.css"
+   ],
+   "result": {
+    "label": "try2",
+    "passed": 7,
+    "total": 8,
+    "summary": "ordering_page_loads_with_country_and_ssn_fields=PASS non_us_country_keeps_ssn_field_by_default=PASS non_us_country_offers_switch_to_government_id=PASS switching_shows_government_id_in_place_of_ssn=PASS ssn_format_still_validated_for_non_us=FAIL us_validation_unchanged=PASS returning_to_us_restores_ssn_only=PASS no_page_errors=PASS",
+    "checkSha256": "a2ccac1692dbf4583adcfd50257daf00ddf41f0aa6c0cd2db7d078298980dea4",
+    "image": "t3-sandbox:538",
+    "supplementary": null
+   },
+   "first_try_workspace": "sandbox-cases/CASE-041-try1",
+   "recorded_at": "2026-09-10T10:51:50.145213Z"
+  }
+ },
+ "CASE-042": {
+  "agent": {
+   "duration_ms": 733629,
+   "total_cost_usd": 3.2458340500000005,
+   "num_turns": 44,
+   "started_at": "2026-09-10T06:36:36Z",
+   "finished_at": "2026-09-10T06:48:54Z"
+  },
+  "files": [
+   "MVP-R/ADMIN/reports/v26/researcher_completion_report/index.cfm"
+  ],
+  "patch_bytes": 5890,
+  "base": {
+   "passed": 6,
+   "total": 7,
+   "summary": "excel_export_opens_as_columns_not_one_column=FAIL excel_export_header_matches_report_columns=PASS excel_export_rows_carry_report_values=PASS comma_in_a_value_stays_in_its_cell=PASS csv_export_still_valid=PASS on_screen_report_unchanged=PASS no_template_errors=PASS"
+  },
+  "human": {
+   "passed": 7,
+   "total": 7,
+   "summary": "excel_export_opens_as_columns_not_one_column=PASS excel_export_header_matches_report_columns=PASS excel_export_rows_carry_report_values=PASS comma_in_a_value_stays_in_its_cell=PASS csv_export_still_valid=PASS on_screen_report_unchanged=PASS no_template_errors=PASS"
+  },
+  "harness": {
+   "passed": 7,
+   "total": 7,
+   "summary": "excel_export_opens_as_columns_not_one_column=PASS excel_export_header_matches_report_columns=PASS excel_export_rows_carry_report_values=PASS comma_in_a_value_stays_in_its_cell=PASS csv_export_still_valid=PASS on_screen_report_unchanged=PASS no_template_errors=PASS"
+  },
+  "batch": "010",
+  "evaluatorNote": null,
+  "humanHours": 1,
+  "meta": {
+   "issue": "OS-6619",
+   "pr": 355,
+   "prTitle": "added code to fix excel format",
+   "merged": "2026-07-22T14:40:18+00:00",
+   "summary": "Investigate Export to Excel formatting for Researcher Completion report"
+  },
+  "intakeVersion": null
+ },
+ "CASE-043": {
+  "agent": {
+   "duration_ms": 711016,
+   "total_cost_usd": 3.6793628000000007,
+   "num_turns": 37,
+   "started_at": "2026-09-10T07:27:39Z",
+   "finished_at": "2026-09-10T07:39:26Z"
+  },
+  "files": [
+   "MVP-S/v26/customers/my-account/api/process-payment.cfm",
+   "MVP-S/v26/customers/my-account/includes/pay-invoice.cfm"
+  ],
+  "patch_bytes": 5385,
+  "base": {
+   "passed": 2,
+   "total": 6,
+   "summary": "page_shows_balance_after_partial_payment=FAIL charged_amount_is_remaining_balance=FAIL invoice_without_payments_unchanged=PASS fully_paid_balance_cannot_be_charged_again=FAIL unavailable_payment_history_stops_before_charge=FAIL no_template_errors=PASS"
+  },
+  "human": {
+   "passed": 6,
+   "total": 6,
+   "summary": "page_shows_balance_after_partial_payment=PASS charged_amount_is_remaining_balance=PASS invoice_without_payments_unchanged=PASS fully_paid_balance_cannot_be_charged_again=PASS unavailable_payment_history_stops_before_charge=PASS no_template_errors=PASS"
+  },
+  "harness": {
+   "passed": 6,
+   "total": 6,
+   "summary": "page_shows_balance_after_partial_payment=PASS charged_amount_is_remaining_balance=PASS invoice_without_payments_unchanged=PASS fully_paid_balance_cannot_be_charged_again=PASS unavailable_payment_history_stops_before_charge=PASS no_template_errors=PASS"
+  },
+  "batch": "010",
+  "evaluatorNote": null,
+  "humanHours": 23,
+  "meta": {
+   "issue": "OS-6628",
+   "pr": 358,
+   "prTitle": "code added to subtract payments from total",
+   "merged": "2026-07-22T14:40:48+00:00",
+   "summary": "V26 HR Module: Invoice with prior partial payments are not reflecting the correct Amount Due"
+  },
+  "intakeVersion": null
+ },
+ "CASE-044": {
+  "agent": {
+   "duration_ms": 486823,
+   "total_cost_usd": 2.3913042999999994,
+   "num_turns": 31,
+   "started_at": "2026-09-10T09:07:15Z",
+   "finished_at": "2026-09-10T09:15:19Z"
+  },
+  "files": [
+   "Components/CFCTAGS/system/order/swiftHire.cfc"
+  ],
+  "patch_bytes": 3821,
+  "base": {
+   "passed": 4,
+   "total": 6,
+   "summary": "first_upload_creates_the_invites=PASS repeated_upload_creates_no_second_open_request=FAIL new_person_in_repeated_upload_still_invited=PASS user_is_told_which_rows_were_skipped=FAIL single_request_creation_unaffected=PASS other_client_open_request_does_not_block_this_client=PASS"
+  },
+  "human": {
+   "passed": 6,
+   "total": 6,
+   "summary": "first_upload_creates_the_invites=PASS repeated_upload_creates_no_second_open_request=PASS new_person_in_repeated_upload_still_invited=PASS user_is_told_which_rows_were_skipped=PASS single_request_creation_unaffected=PASS other_client_open_request_does_not_block_this_client=PASS"
+  },
+  "harness": {
+   "passed": 6,
+   "total": 6,
+   "summary": "first_upload_creates_the_invites=PASS repeated_upload_creates_no_second_open_request=PASS new_person_in_repeated_upload_still_invited=PASS user_is_told_which_rows_were_skipped=PASS single_request_creation_unaffected=PASS other_client_open_request_does_not_block_this_client=PASS"
+  },
+  "batch": "010",
+  "evaluatorNote": null,
+  "humanHours": 1,
+  "meta": {
+   "issue": "OS-6612",
+   "pr": 356,
+   "prTitle": "added code to do a dupe check on batch SH order",
+   "merged": "2026-07-22T14:45:49+00:00",
+   "summary": "V26 HR Module: SwiftHire Batch Upload process does not have duplicate detection in place"
+  },
+  "intakeVersion": null
+ },
+ "CASE-045": {
+  "agent": {
+   "duration_ms": 458345,
+   "total_cost_usd": 3.326927999999999,
+   "num_turns": 54,
+   "started_at": "2026-09-10T07:06:40Z",
+   "finished_at": "2026-09-10T07:14:21Z"
+  },
+  "files": [
+   "MVP-R/ADMIN/Results/hold_v26.cfm"
+  ],
+  "patch_bytes": 875,
+  "base": {
+   "passed": 3,
+   "total": 5,
+   "summary": "holds_queue_renders_with_held_searches=PASS deleted_note_not_shown_for_search_with_other_notes=FAIL active_notes_still_shown=PASS search_with_only_deleted_notes_shows_none_without_error=FAIL no_template_errors=PASS"
+  },
+  "human": {
+   "passed": 5,
+   "total": 5,
+   "summary": "holds_queue_renders_with_held_searches=PASS deleted_note_not_shown_for_search_with_other_notes=PASS active_notes_still_shown=PASS search_with_only_deleted_notes_shows_none_without_error=PASS no_template_errors=PASS"
+  },
+  "harness": {
+   "passed": 5,
+   "total": 5,
+   "summary": "holds_queue_renders_with_held_searches=PASS deleted_note_not_shown_for_search_with_other_notes=PASS active_notes_still_shown=PASS search_with_only_deleted_notes_shows_none_without_error=PASS no_template_errors=PASS"
+  },
+  "batch": "010",
+  "evaluatorNote": null,
+  "humanHours": 23,
+  "meta": {
+   "issue": "OS-6627",
+   "pr": 354,
+   "prTitle": "only show none deleted notes",
+   "merged": "2026-07-22T14:53:55+00:00",
+   "summary": "V26 Hold Queue:"
+  },
+  "intakeVersion": null
+ },
+ "CASE-046": {
+  "agent": {
+   "duration_ms": 969686,
+   "total_cost_usd": 5.499214250000002,
+   "num_turns": 60,
+   "started_at": "2026-09-10T08:30:48Z",
+   "finished_at": "2026-09-10T08:46:57Z"
+  },
+  "files": [
+   "MVP-S/v26/customers/modern-order/api/includes/modern-order-build-model-body.cfm"
+  ],
+  "patch_bytes": 3264,
+  "base": {
+   "passed": 6,
+   "total": 8,
+   "summary": "drafts_build_through_real_save_draft=PASS upgraded_swcr_present_as_upgrade_row=PASS aka_charge_mode_in_effect=PASS upgraded_aka_billed_a_la_carte_plus_fee=FAIL upgraded_aka_fee_is_included=FAIL upgraded_main_name_priced_as_before=PASS non_upgraded_aka_pricing_unchanged=PASS package_alias_rate_pricing_unchanged=PASS"
+  },
+  "human": {
+   "passed": 8,
+   "total": 8,
+   "summary": "drafts_build_through_real_save_draft=PASS upgraded_swcr_present_as_upgrade_row=PASS aka_charge_mode_in_effect=PASS upgraded_aka_billed_a_la_carte_plus_fee=PASS upgraded_aka_fee_is_included=PASS upgraded_main_name_priced_as_before=PASS non_upgraded_aka_pricing_unchanged=PASS package_alias_rate_pricing_unchanged=PASS"
+  },
+  "harness": {
+   "passed": 8,
+   "total": 8,
+   "summary": "drafts_build_through_real_save_draft=PASS upgraded_swcr_present_as_upgrade_row=PASS aka_charge_mode_in_effect=PASS upgraded_aka_billed_a_la_carte_plus_fee=PASS upgraded_aka_fee_is_included=PASS upgraded_main_name_priced_as_before=PASS non_upgraded_aka_pricing_unchanged=PASS package_alias_rate_pricing_unchanged=PASS"
+  },
+  "batch": "010",
+  "evaluatorNote": null,
+  "humanHours": 143,
+  "meta": {
+   "issue": "OS-6622",
+   "pr": 357,
+   "prTitle": "Lucee/OS-6622 upgrade aka",
+   "merged": "2026-07-23T13:23:15+00:00",
+   "summary": "Statewide Criminal (upgraded from County Criminal) does not charge a la carte price on AKA/alias names when \"Add AKAs at normal price outside of the package\" is enabled"
+  },
+  "intakeVersion": null
+ },
+ "CASE-047": {
+  "agent": {
+   "duration_ms": 1424713,
+   "total_cost_usd": 9.479666999999997,
+   "num_turns": 83,
+   "started_at": "2026-09-10T08:06:38Z",
+   "finished_at": "2026-09-10T08:30:23Z"
+  },
+  "files": [
+   "MVP/INCLUDES/results/cocr.cfm",
+   "MVP/INCLUDES/results/fdcr.cfm",
+   "MVP/INCLUDES/results/mvr.cfm",
+   "MVP/INCLUDES/results/swcr.cfm",
+   "MVP/INCLUDES/results/va_clean_slate_disclosure.cfm"
+  ],
+  "patch_bytes": 2378,
+  "base": {
+   "passed": 2,
+   "total": 6,
+   "summary": "va_statewide_criminal_result_shows_disclosure_with_received_date=FAIL va_county_criminal_result_shows_disclosure=FAIL va_mvr_result_shows_disclosure=FAIL disclosure_date_comes_from_the_search_record=FAIL other_state_results_show_no_disclosure=PASS results_render_without_error=PASS"
+  },
+  "human": {
+   "passed": 6,
+   "total": 6,
+   "summary": "va_statewide_criminal_result_shows_disclosure_with_received_date=PASS va_county_criminal_result_shows_disclosure=PASS va_mvr_result_shows_disclosure=PASS disclosure_date_comes_from_the_search_record=PASS other_state_results_show_no_disclosure=PASS results_render_without_error=PASS"
+  },
+  "harness": {
+   "passed": 6,
+   "total": 6,
+   "summary": "va_statewide_criminal_result_shows_disclosure_with_received_date=PASS va_county_criminal_result_shows_disclosure=PASS va_mvr_result_shows_disclosure=PASS disclosure_date_comes_from_the_search_record=PASS other_state_results_show_no_disclosure=PASS results_render_without_error=PASS"
+  },
+  "batch": "010",
+  "evaluatorNote": null,
+  "humanHours": 49,
+  "meta": {
+   "issue": "OS-6625",
+   "pr": 362,
+   "prTitle": "Lucee/OS-6625 VA update",
+   "merged": "2026-08-07T17:11:27+00:00",
+   "summary": "Virginia Clean Slate Act \u2013 Record Sealing Disclosure Notice \u2013 Scope Determination Needed"
+  },
+  "intakeVersion": null
+ },
+ "CASE-048": {
+  "agent": {
+   "duration_ms": 442402,
+   "total_cost_usd": 3.176939000000001,
+   "num_turns": 56,
+   "started_at": "2026-09-10T06:21:33Z",
+   "finished_at": "2026-09-10T06:28:59Z"
+  },
+  "files": [
+   "MVP-S/v26/customers/report-management/index.cfm"
+  ],
+  "patch_bytes": 4436,
+  "base": {
+   "passed": 4,
+   "total": 7,
+   "summary": "reference_shown_in_list_when_setting_on=FAIL second_and_third_reference_shown_when_their_settings_on=FAIL second_and_third_hidden_when_only_first_setting_on=FAIL no_reference_shown_when_settings_off=PASS reference_value_is_encoded=PASS list_still_renders_cards_and_selection=PASS no_template_errors=PASS"
+  },
+  "human": {
+   "passed": 7,
+   "total": 7,
+   "summary": "reference_shown_in_list_when_setting_on=PASS second_and_third_reference_shown_when_their_settings_on=PASS second_and_third_hidden_when_only_first_setting_on=PASS no_reference_shown_when_settings_off=PASS reference_value_is_encoded=PASS list_still_renders_cards_and_selection=PASS no_template_errors=PASS"
+  },
+  "harness": {
+   "passed": 7,
+   "total": 7,
+   "summary": "reference_shown_in_list_when_setting_on=PASS second_and_third_reference_shown_when_their_settings_on=PASS second_and_third_hidden_when_only_first_setting_on=PASS no_reference_shown_when_settings_off=PASS reference_value_is_encoded=PASS list_still_renders_cards_and_selection=PASS no_template_errors=PASS"
+  },
+  "batch": "010",
+  "evaluatorNote": null,
+  "humanHours": 26,
+  "meta": {
+   "issue": "OS-6642",
+   "pr": 375,
+   "prTitle": "added code to show ref",
+   "merged": "2026-09-03T16:49:50+00:00",
+   "summary": "Enhancement Request: Display reference codes in HR Module applicant list view (currently detail view only)"
+  },
+  "intakeVersion": null
+ },
+ "CASE-049": {
+  "agent": {
+   "duration_ms": 263314,
+   "total_cost_usd": 1.7266355,
+   "num_turns": 36,
+   "started_at": "2026-09-10T06:28:59Z",
+   "finished_at": "2026-09-10T06:33:27Z"
+  },
+  "files": [
+   "MVP-S/v26/customers/report-management/index.cfm"
+  ],
+  "patch_bytes": 2500,
+  "base": {
+   "passed": 3,
+   "total": 6,
+   "summary": "inprogress_folder_shows_client_name=FAIL completed_folder_shows_client_name=FAIL client_id_no_longer_shown_as_label=FAIL client_name_is_encoded_not_markup=PASS lists_still_render_cards_and_actions=PASS no_template_errors=PASS"
+  },
+  "human": {
+   "passed": 6,
+   "total": 6,
+   "summary": "inprogress_folder_shows_client_name=PASS completed_folder_shows_client_name=PASS client_id_no_longer_shown_as_label=PASS client_name_is_encoded_not_markup=PASS lists_still_render_cards_and_actions=PASS no_template_errors=PASS"
+  },
+  "harness": {
+   "passed": 6,
+   "total": 6,
+   "summary": "inprogress_folder_shows_client_name=PASS completed_folder_shows_client_name=PASS client_id_no_longer_shown_as_label=PASS client_name_is_encoded_not_markup=PASS lists_still_render_cards_and_actions=PASS no_template_errors=PASS"
+  },
+  "batch": "010",
+  "evaluatorNote": null,
+  "humanHours": 74,
+  "meta": {
+   "issue": "OS-6663",
+   "pr": 374,
+   "prTitle": "Lucee/OS-6663 convert clientid to name",
+   "merged": "2026-09-03T16:50:05+00:00",
+   "summary": "V26 HR Module: Update the display to show client name instead of clientId"
+  },
+  "intakeVersion": null
+ },
+ "CASE-050": {
+  "agent": {
+   "duration_ms": 870960,
+   "total_cost_usd": 5.575265249999999,
+   "num_turns": 77,
+   "started_at": "2026-09-10T06:48:54Z",
+   "finished_at": "2026-09-10T07:03:28Z"
+  },
+  "files": [
+   "MVP-S/v26/customers/modern-order/api/includes/mvr-profile-rules.cfm",
+   "MVP-S/v26/customers/modern-order/api/mvr-profile-requirements.cfm",
+   "MVP-S/v26/customers/modern-order/api/submit-order.cfm",
+   "MVP-S/v26/customers/modern-order/js/app.js",
+   "MVP-S/v26/customers/modern-order/js/components.js"
+  ],
+  "patch_bytes": 6387,
+  "base": {
+   "passed": 3,
+   "total": 6,
+   "summary": "server_rules_require_license_for_cdlis=FAIL server_rejects_cdlis_order_without_license=FAIL server_accepts_license_on_cdlis_order_past_that_check=PASS other_states_still_require_license=PASS ui_marks_cdlis_license_required=FAIL ui_other_state_unchanged=PASS"
+  },
+  "human": {
+   "passed": 6,
+   "total": 6,
+   "summary": "server_rules_require_license_for_cdlis=PASS server_rejects_cdlis_order_without_license=PASS server_accepts_license_on_cdlis_order_past_that_check=PASS other_states_still_require_license=PASS ui_marks_cdlis_license_required=PASS ui_other_state_unchanged=PASS"
+  },
+  "harness": {
+   "passed": 6,
+   "total": 6,
+   "summary": "server_rules_require_license_for_cdlis=PASS server_rejects_cdlis_order_without_license=PASS server_accepts_license_on_cdlis_order_past_that_check=PASS other_states_still_require_license=PASS ui_marks_cdlis_license_required=PASS ui_other_state_unchanged=PASS"
+  },
+  "batch": "010",
+  "evaluatorNote": null,
+  "humanHours": 74,
+  "meta": {
+   "issue": "OS-6664",
+   "pr": 373,
+   "prTitle": "added code to requier CDLIS license number",
+   "merged": "2026-09-03T16:50:26+00:00",
+   "summary": "V26 HR Module:"
+  },
+  "intakeVersion": null
+ },
+ "CASE-051": {
+  "agent": {
+   "duration_ms": 448659,
+   "total_cost_usd": 2.5203290000000003,
+   "num_turns": 36,
+   "started_at": "2026-09-10T16:49:26Z",
+   "finished_at": "2026-09-10T16:56:59Z"
+  },
+  "files": [
+   "CUSTOMTAGS/CRED_Hart.cfm"
+  ],
+  "patch_bytes": 3053,
+  "base": {
+   "passed": 4,
+   "total": 6,
+   "summary": "request_reaches_hart_with_core_fields=PASS client_phone_number_included=FAIL client_address_included=FAIL applicant_fields_unchanged=PASS client_without_phone_or_address_still_sends=PASS no_client_data_leaks_into_applicant_fields=PASS"
+  },
+  "human": {
+   "passed": 6,
+   "total": 6,
+   "summary": "request_reaches_hart_with_core_fields=PASS client_phone_number_included=PASS client_address_included=PASS applicant_fields_unchanged=PASS client_without_phone_or_address_still_sends=PASS no_client_data_leaks_into_applicant_fields=PASS"
+  },
+  "harness": {
+   "passed": 6,
+   "total": 6,
+   "summary": "request_reaches_hart_with_core_fields=PASS client_phone_number_included=PASS client_address_included=PASS applicant_fields_unchanged=PASS client_without_phone_or_address_still_sends=PASS no_client_data_leaks_into_applicant_fields=PASS"
+  },
+  "batch": "011",
+  "evaluatorNote": null,
+  "humanHours": null,
+  "meta": {
+   "issue": null,
+   "pr": null,
+   "prTitle": null,
+   "merged": null,
+   "summary": null
+  },
+  "intakeVersion": null
+ },
+ "CASE-055": {
+  "agent": {
+   "duration_ms": 764575,
+   "total_cost_usd": 3.3992619499999996,
+   "num_turns": 38,
+   "started_at": "2026-09-10T17:26:48Z",
+   "finished_at": "2026-09-10T17:39:33Z"
+  },
+  "files": [
+   "Components/CFCTAGS/system/message/message.cfc"
+  ],
+  "patch_bytes": 1954,
+  "base": {
+   "passed": 2,
+   "total": 6,
+   "summary": "integration_report_publishes_despite_portal_opt_out=FAIL integration_manager_report_publishes_despite_portal_opt_out=FAIL message_carries_id_status_and_integrated_flag=FAIL client_report_without_portal_does_not_publish=PASS pending_integration_report_publishes_current_status=FAIL no_errors_thrown=PASS"
+  },
+  "human": {
+   "passed": 6,
+   "total": 6,
+   "summary": "integration_report_publishes_despite_portal_opt_out=PASS integration_manager_report_publishes_despite_portal_opt_out=PASS message_carries_id_status_and_integrated_flag=PASS client_report_without_portal_does_not_publish=PASS pending_integration_report_publishes_current_status=PASS no_errors_thrown=PASS"
+  },
+  "harness": {
+   "passed": 6,
+   "total": 6,
+   "summary": "integration_report_publishes_despite_portal_opt_out=PASS integration_manager_report_publishes_despite_portal_opt_out=PASS message_carries_id_status_and_integrated_flag=PASS client_report_without_portal_does_not_publish=PASS pending_integration_report_publishes_current_status=PASS no_errors_thrown=PASS"
+  },
+  "batch": "011",
+  "evaluatorNote": null,
+  "humanHours": null,
+  "meta": {
+   "issue": null,
+   "pr": null,
+   "prTitle": null,
+   "merged": null,
+   "summary": null
+  },
+  "intakeVersion": null
+ },
+ "CASE-056": {
+  "agent": {
+   "duration_ms": 1235640,
+   "total_cost_usd": 9.204853000000004,
+   "num_turns": 66,
+   "started_at": "2026-09-10T17:39:33Z",
+   "finished_at": "2026-09-10T18:00:12Z"
+  },
+  "files": [
+   "Components/CFCTAGS/integration/superInstantCriminal/backgroundReport.cfc"
+  ],
+  "patch_bytes": 4002,
+  "base": {
+   "passed": 2,
+   "total": 5,
+   "summary": "supersearch_result_renders_all_records=FAIL supersearch_result_with_vendor_markup_quirks_renders_all_records=FAIL plain_qa_result_still_renders=PASS plain_qa_result_with_quirks_renders=PASS match_count_and_rows_agree=FAIL"
+  },
+  "human": {
+   "passed": 5,
+   "total": 5,
+   "summary": "supersearch_result_renders_all_records=PASS supersearch_result_with_vendor_markup_quirks_renders_all_records=PASS plain_qa_result_still_renders=PASS plain_qa_result_with_quirks_renders=PASS match_count_and_rows_agree=PASS"
+  },
+  "harness": {
+   "passed": 2,
+   "total": 5,
+   "summary": "supersearch_result_renders_all_records=FAIL supersearch_result_with_vendor_markup_quirks_renders_all_records=FAIL plain_qa_result_still_renders=PASS plain_qa_result_with_quirks_renders=PASS match_count_and_rows_agree=FAIL"
+  },
+  "batch": "011",
+  "evaluatorNote": "First try FAIL 2/5: the agent made the SuperSearch gateway XML parser (superInstantCriminal/backgroundReport.cfc) tolerant of malformed vendor markup; the rows are dropped by the deverusdirect2 displaycriminal.cfc name-match query-of-queries (null cast) that the human fixed and the hidden check reproduces (\"Can't cast Null value to value of type [query]\" on both base and the agent tree). Failure mode: plausible but unverified root cause; the agent never exercised the real display path.",
+  "humanHours": null,
+  "meta": {
+   "issue": null,
+   "pr": null,
+   "prTitle": null,
+   "merged": null,
+   "summary": null
+  },
+  "intakeVersion": null
+ },
+ "CASE-057": {
+  "agent": {
+   "duration_ms": 319878,
+   "total_cost_usd": 1.2588192500000002,
+   "num_turns": 23,
+   "started_at": "2026-09-10T18:00:12Z",
+   "finished_at": "2026-09-10T18:05:35Z"
+  },
+  "files": [
+   "Components/CFCTAGS/communication/javaMail.cfc"
+  ],
+  "patch_bytes": 1732,
+  "base": {
+   "passed": 3,
+   "total": 6,
+   "summary": "messages_reach_the_relay=PASS display_name_sender_message_id_not_malformed=FAIL plain_sender_message_id_valid_or_absent=FAIL message_ids_unique_when_present=PASS recipients_subject_body_unchanged=PASS sender_without_domain_still_sends=FAIL"
+  },
+  "human": {
+   "passed": 6,
+   "total": 6,
+   "summary": "messages_reach_the_relay=PASS display_name_sender_message_id_not_malformed=PASS plain_sender_message_id_valid_or_absent=PASS message_ids_unique_when_present=PASS recipients_subject_body_unchanged=PASS sender_without_domain_still_sends=PASS"
+  },
+  "harness": {
+   "passed": 6,
+   "total": 6,
+   "summary": "messages_reach_the_relay=PASS display_name_sender_message_id_not_malformed=PASS plain_sender_message_id_valid_or_absent=PASS message_ids_unique_when_present=PASS recipients_subject_body_unchanged=PASS sender_without_domain_still_sends=PASS"
+  },
+  "batch": "011",
+  "evaluatorNote": null,
+  "humanHours": null,
+  "meta": {
+   "issue": null,
+   "pr": null,
+   "prTitle": null,
+   "merged": null,
+   "summary": null
+  },
+  "intakeVersion": null
+ },
+ "CASE-058": {
+  "agent": {
+   "duration_ms": 519018,
+   "total_cost_usd": 2.564389,
+   "num_turns": 42,
+   "started_at": "2026-09-10T18:05:35Z",
+   "finished_at": "2026-09-10T18:14:18Z"
+  },
+  "files": [
+   "MVP-S/v09/INCLUDES/js/orderReport.js",
+   "MVP/INCLUDES/autoformvalidator.cfm",
+   "MVP/i9/form/i9form.cfm"
+  ],
+  "patch_bytes": 4733,
+  "base": {
+   "passed": 3,
+   "total": 5,
+   "summary": "ten_digit_number_accepted_everywhere=PASS eleven_digit_number_accepted_everywhere=FAIL nine_and_twelve_digit_numbers_rejected_by_the_form_validators=PASS lowercase_letters_accepted_digit_prefix_rejected=FAIL other_document_types_unchanged=PASS | supp:server_rejects_other_lengths_without_a_template_error=PASS"
+  },
+  "human": {
+   "passed": 5,
+   "total": 5,
+   "summary": "ten_digit_number_accepted_everywhere=PASS eleven_digit_number_accepted_everywhere=PASS nine_and_twelve_digit_numbers_rejected_by_the_form_validators=PASS lowercase_letters_accepted_digit_prefix_rejected=PASS other_document_types_unchanged=PASS | supp:server_rejects_other_lengths_without_a_template_error=FAIL"
+  },
+  "harness": {
+   "passed": 5,
+   "total": 5,
+   "summary": "ten_digit_number_accepted_everywhere=PASS eleven_digit_number_accepted_everywhere=PASS nine_and_twelve_digit_numbers_rejected_by_the_form_validators=PASS lowercase_letters_accepted_digit_prefix_rejected=PASS other_document_types_unchanged=PASS | supp:server_rejects_other_lengths_without_a_template_error=PASS"
+  },
+  "batch": "011",
+  "evaluatorNote": "Check adapter (e2): the I-9 form check originally called docNumberValidation_13_17 by name; the agent split I-551 (docNumberValidation_13, widened) from I-766 (unchanged), so the check now follows the validator the form wires to document type 13. Intent unchanged; base/human re-proven (3/5, 5/5). Supplementary: the agent's server-side validator rejects other lengths cleanly (the human fix throws a template error there).",
+  "humanHours": null,
+  "meta": {
+   "issue": null,
+   "pr": null,
+   "prTitle": null,
+   "merged": null,
+   "summary": null
+  },
+  "intakeVersion": null
+ },
+ "CASE-052": {
+  "agent": {
+   "duration_ms": 794832,
+   "total_cost_usd": 4.4958325,
+   "num_turns": 58,
+   "started_at": "2026-09-10T16:56:59Z",
+   "finished_at": "2026-09-10T17:10:17Z"
+  },
+  "files": [
+   "MVP/INCLUDES/Accounting/RunInvoiceAsync.cfm",
+   "MVP/INCLUDES/Accounting/TransferNewInvoice-1.cfm"
+  ],
+  "patch_bytes": 3088,
+  "base": {
+   "passed": 1,
+   "total": 6,
+   "summary": "token_failure_is_not_a_blank_results_page=FAIL token_failure_shows_a_clear_error=FAIL empty_upstream_reply_shows_a_clear_error=FAIL unreachable_controller_shows_a_clear_error=FAIL healthy_path_still_reports_or_redirects=FAIL controller_asked_the_token_service=PASS"
+  },
+  "human": {
+   "passed": 6,
+   "total": 6,
+   "summary": "token_failure_is_not_a_blank_results_page=PASS token_failure_shows_a_clear_error=PASS empty_upstream_reply_shows_a_clear_error=PASS unreachable_controller_shows_a_clear_error=PASS healthy_path_still_reports_or_redirects=PASS controller_asked_the_token_service=PASS"
+  },
+  "harness": {
+   "passed": 6,
+   "total": 6,
+   "summary": "token_failure_is_not_a_blank_results_page=PASS token_failure_shows_a_clear_error=PASS empty_upstream_reply_shows_a_clear_error=PASS unreachable_controller_shows_a_clear_error=PASS healthy_path_still_reports_or_redirects=PASS controller_asked_the_token_service=PASS"
+  },
+  "batch": "011",
+  "evaluatorNote": null,
+  "humanHours": null,
+  "meta": {
+   "issue": null,
+   "pr": null,
+   "prTitle": null,
+   "merged": null,
+   "summary": null
+  },
+  "intakeVersion": null
+ },
+ "CASE-054": {
+  "agent": {
+   "duration_ms": 987869,
+   "total_cost_usd": 6.22306765,
+   "num_turns": 64,
+   "started_at": "2026-09-10T17:10:17Z",
+   "finished_at": "2026-09-10T17:26:48Z"
+  },
+  "files": [
+   "MVP-R/ADMIN/REPORTMANAGEMENT/QualityAssuranceProcess_INCR.cfm"
+  ],
+  "patch_bytes": 8866,
+  "base": {
+   "passed": 3,
+   "total": 6,
+   "summary": "qa_page_renders_all_three_records=PASS matching_county_search_identified_by_id=FAIL matching_search_id_is_a_link=FAIL alias_name_search_does_not_count=PASS statewide_search_matches_record_in_that_state=FAIL no_cross_record_leakage=PASS"
+  },
+  "human": {
+   "passed": 6,
+   "total": 6,
+   "summary": "qa_page_renders_all_three_records=PASS matching_county_search_identified_by_id=PASS matching_search_id_is_a_link=PASS alias_name_search_does_not_count=PASS statewide_search_matches_record_in_that_state=PASS no_cross_record_leakage=PASS"
+  },
+  "harness": {
+   "passed": 3,
+   "total": 6,
+   "summary": "qa_page_renders_all_three_records=PASS matching_county_search_identified_by_id=FAIL matching_search_id_is_a_link=FAIL alias_name_search_does_not_count=PASS statewide_search_matches_record_in_that_state=FAIL no_cross_record_leakage=PASS"
+  },
+  "batch": "011",
+  "evaluatorNote": "First try FAIL 3/6: the agent added the \"County Search Exists?\" column to the legacy NBData summary branch of QualityAssuranceProcess_INCR.cfm; the records researchers review are rendered by the provider display components (deverusdirect2/cleara/innovative displaycriminal.cfc setDisplayQAResult), which the human changed and which the hidden check exercises. Failure mode: right symptom, wrong layer (as 039).",
+  "humanHours": null,
+  "meta": {
+   "issue": null,
+   "pr": null,
+   "prTitle": null,
+   "merged": null,
+   "summary": null
+  },
+  "intakeVersion": null
+ }
+}
