@@ -346,7 +346,61 @@
    "merged": "2026-06-02T19:48:06+00:00",
    "summary": "Inconsistent DOB Redaction on reports in RiskAware"
   },
-  "intakeVersion": null
+  "intakeVersion": null,
+  "attempts": {
+   "v2-try1": {
+    "process": "v2",
+    "from": null,
+    "feedbackSha256": null,
+    "taskSha256": "9b4ead878966b0ebf34d8572b75aaacefdc0e51d559766c1f370a8df9497c45c",
+    "agent": {
+     "started_at": "2026-09-11T16:10:57Z",
+     "finished_at": "2026-09-11T16:46:40Z",
+     "duration_ms": 2142070,
+     "duration_api_ms": 1832873,
+     "num_turns": 107,
+     "total_cost_usd": 14.575514600000004,
+     "session_id": "53c43f05-48cc-4ce0-9a21-11d58f04487c",
+     "is_error": false,
+     "subtype": "success",
+     "agent_exit": "0",
+     "image": "t3-sandbox:538"
+    },
+    "gate": {
+     "repro_script": true,
+     "repro_before": "REPRO: FAIL",
+     "repro_after": "REPRO: PASS",
+     "acceptance": true,
+     "report": true,
+     "acceptance_items": {
+      "verified": 8,
+      "unobservable": 1,
+      "not_done": 1
+     },
+     "passed": false
+    },
+    "patch_bytes": 17085,
+    "patch_sha256": "643dd08fa677ca0d285ea9210bd4dfb5d7e1682efa0e25edea24cab4344176c9",
+    "files_changed": [
+     "MVP/INCLUDES/results/cds.cfm",
+     "MVP/INCLUDES/results/evct.cfm",
+     "MVP/INCLUDES/results/sxof.cfm",
+     "MVP/INCLUDES/results/worc.cfm",
+     "tests/_case015/"
+    ],
+    "result": {
+     "label": "e1",
+     "passed": 5,
+     "total": 6,
+     "summary": "client_view_masks_dob_on_completed_search=PASS client_view_masks_dob_on_search_still_in_review=FAIL client_view_masks_dob_on_mvr_search=PASS admin_qa_review_view_keeps_full_dob=PASS setting_off_shows_full_dob_to_client=PASS results_render_without_error=PASS",
+     "image": "t3-sandbox:538",
+     "finished": "2026-09-11T16:46:48Z",
+     "checkSha256": "b946d2a02cb5ea9657ebfc37c742c05aa53d77aac4ea12cec793709ea5041174"
+    },
+    "outcome": "FAIL",
+    "recordedAt": "2026-09-11T16:46:48.960725+00:00"
+   }
+  }
  },
  "CASE-011": {
   "agent": {
