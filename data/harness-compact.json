@@ -1062,7 +1062,57 @@
    "merged": "2026-06-23T19:45:46+00:00",
    "summary": "V26 HR Module: Add Package Name to Applicant Detail view as in V09"
   },
-  "intakeVersion": null
+  "intakeVersion": null,
+  "attempts": {
+   "v2-try1": {
+    "process": "v2",
+    "from": null,
+    "feedbackSha256": null,
+    "taskSha256": "e0fc45b509c99324bc3cd5dd382d1f5b6ba2323bf75cef9aba696617ab6295cd",
+    "agent": {
+     "started_at": "2026-09-11T13:13:36Z",
+     "finished_at": "2026-09-11T13:33:35Z",
+     "duration_ms": 1192096,
+     "duration_api_ms": 1187459,
+     "num_turns": 100,
+     "total_cost_usd": 8.012494999999998,
+     "session_id": "db60c026-d80b-4f6c-a718-198b869978e3",
+     "is_error": false,
+     "subtype": "success",
+     "agent_exit": "0",
+     "image": "t3-sandbox:538"
+    },
+    "gate": {
+     "repro_script": true,
+     "repro_before": "REPRO: FAIL",
+     "repro_after": "REPRO: PASS",
+     "acceptance": true,
+     "report": true,
+     "acceptance_items": {
+      "verified": 4,
+      "unobservable": 0,
+      "not_done": 0
+     },
+     "passed": true
+    },
+    "patch_bytes": 2335,
+    "patch_sha256": "0fcb9f2cebf9f18387fd39d5725f653c723c6be3f5d99d9e2726156961ab3b94",
+    "files_changed": [
+     "MVP-S/v26/customers/report-management/applicant-detail.cfm"
+    ],
+    "result": {
+     "label": "e1",
+     "passed": 6,
+     "total": 7,
+     "summary": "applicant_detail_renders_for_seeded_reports=PASS package_name_shown_from_report_data=PASS package_name_follows_the_data_not_a_constant=PASS report_without_package_shows_no_package_or_empty_label=PASS individual_search_components_are_not_shown_as_the_package=PASS legacy_package_name_gate_respected=FAIL existing_detail_fields_unchanged=PASS | supp:package_name_rendered_encoded=FAIL",
+     "image": "t3-sandbox:538",
+     "finished": "2026-09-11T13:33:44Z",
+     "checkSha256": "0c6444b7964b5eb77c04aa2e57d87ec56fb496f61f6e3a488601e6d00e3c11e0"
+    },
+    "outcome": "FAIL",
+    "recordedAt": "2026-09-11T13:33:44.377178+00:00"
+   }
+  }
  },
  "CASE-032": {
   "agent": {
