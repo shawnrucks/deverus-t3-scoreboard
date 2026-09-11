@@ -1,4 +1,43 @@
 {
+ "CASE-030": {
+  "agent": {
+   "duration_ms": 671765,
+   "total_cost_usd": 3.5866563999999994,
+   "num_turns": 52,
+   "started_at": "2026-09-10T23:55:57Z",
+   "finished_at": "2026-09-11T00:07:13Z"
+  },
+  "files": [
+   "Components/CFCTAGS/system/reportManagement/clientStatus.cfc"
+  ],
+  "patch_bytes": 4668,
+  "base": {
+   "passed": 5,
+   "total": 7,
+   "summary": "typeahead_first_last_finds_the_applicant=PASS results_page_first_last_finds_the_applicant=FAIL last_comma_first_still_works=PASS extra_whitespace_tolerated=FAIL one_name_search_preserved=PASS no_cross_tenant_or_cancelled_results=PASS quotes_and_injection_stay_data=PASS"
+  },
+  "human": {
+   "passed": 7,
+   "total": 7,
+   "summary": "typeahead_first_last_finds_the_applicant=PASS results_page_first_last_finds_the_applicant=PASS last_comma_first_still_works=PASS extra_whitespace_tolerated=PASS one_name_search_preserved=PASS no_cross_tenant_or_cancelled_results=PASS quotes_and_injection_stay_data=PASS"
+  },
+  "harness": {
+   "passed": 6,
+   "total": 7,
+   "summary": "typeahead_first_last_finds_the_applicant=PASS results_page_first_last_finds_the_applicant=PASS last_comma_first_still_works=PASS extra_whitespace_tolerated=FAIL one_name_search_preserved=PASS no_cross_tenant_or_cancelled_results=PASS quotes_and_injection_stay_data=PASS"
+  },
+  "batch": "007",
+  "evaluatorNote": null,
+  "humanHours": 1,
+  "meta": {
+   "issue": "OS-6561",
+   "pr": 331,
+   "prTitle": "added code to update search feature",
+   "merged": "2026-06-19T17:34:32+00:00",
+   "summary": "V26 HR Module: Inquiry to see if the regular Search feature can be more intuitive"
+  },
+  "intakeVersion": null
+ },
  "CASE-029": {
   "agent": {
    "duration_ms": 823745,
