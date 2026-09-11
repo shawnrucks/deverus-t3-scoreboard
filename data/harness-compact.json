@@ -563,7 +563,57 @@
    "merged": "2026-06-12T19:09:42+00:00",
    "summary": "V26 HR Module: Home page numbers do not reflect user settings as V09 Home page did"
   },
-  "intakeVersion": null
+  "intakeVersion": null,
+  "attempts": {
+   "v2-try1": {
+    "process": "v2",
+    "from": null,
+    "feedbackSha256": null,
+    "taskSha256": "56b47bc13bced44072e3cedd637473f8b070a47463dc4525973e258e704c7300",
+    "agent": {
+     "started_at": "2026-09-11T14:56:41Z",
+     "finished_at": "2026-09-11T15:33:07Z",
+     "duration_ms": 2183723,
+     "duration_api_ms": 1365454,
+     "num_turns": 67,
+     "total_cost_usd": 7.766418699999998,
+     "session_id": "6e95d29c-2bea-4631-adc8-1104a0b083c7",
+     "is_error": false,
+     "subtype": "success",
+     "agent_exit": "0",
+     "image": "t3-sandbox:538"
+    },
+    "gate": {
+     "repro_script": true,
+     "repro_before": "REPRO: FAIL",
+     "repro_after": "REPRO: PASS",
+     "acceptance": true,
+     "report": true,
+     "acceptance_items": {
+      "verified": 8,
+      "unobservable": 0,
+      "not_done": 0
+     },
+     "passed": true
+    },
+    "patch_bytes": 1704,
+    "patch_sha256": "c8726a58cc43428394b691d2e20b7ccbe63934803342f455243e4577271c8261",
+    "files_changed": [
+     "MVP-S/v26/customers/modern-dashboard/index.cfm"
+    ],
+    "result": {
+     "label": "e1",
+     "passed": 9,
+     "total": 10,
+     "summary": "dashboard_renders_count_tiles=PASS remembered_all_users_view_counts_all_users=PASS remembered_current_user_view_counts_own=PASS configured_all_users_default_with_permission=PASS configured_all_users_default_denied_without_permission=PASS missing_all_users_setting_stays_own=PASS legacy_all_users_default_counts_all_users=PASS no_setting_defaults_to_own=PASS swifthire_tile_shown_when_enabled_even_with_nothing_pending=FAIL swifthire_tile_hidden_when_module_disabled=PASS",
+     "image": "t3-sandbox:538",
+     "finished": "2026-09-11T15:33:18Z",
+     "checkSha256": "d31f88eabe03f675affd768eb0d7b03cb0293dda8694c9fd065515c89fca348b"
+    },
+    "outcome": "FAIL",
+    "recordedAt": "2026-09-11T15:33:18.355862+00:00"
+   }
+  }
  },
  "CASE-021": {
   "agent": {
