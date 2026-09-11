@@ -643,7 +643,58 @@
    "merged": "2026-06-12T19:11:37+00:00",
    "summary": "V26 HR Module: Pre-Adverse and Adverse Action Letters"
   },
-  "intakeVersion": null
+  "intakeVersion": null,
+  "attempts": {
+   "v2-try1": {
+    "process": "v2",
+    "from": null,
+    "feedbackSha256": null,
+    "taskSha256": "c9e1c3e7ce1644eab4f3d726e433d17b86e85b330d8e7afce73d7cb2acac53d4",
+    "agent": {
+     "started_at": "2026-09-11T14:29:29Z",
+     "finished_at": "2026-09-11T14:40:50Z",
+     "duration_ms": 673548,
+     "duration_api_ms": 670223,
+     "num_turns": 44,
+     "total_cost_usd": 2.94469695,
+     "session_id": "5a42c410-0cae-490f-90a6-e116a64075f0",
+     "is_error": false,
+     "subtype": "success",
+     "agent_exit": "0",
+     "image": "t3-sandbox:538"
+    },
+    "gate": {
+     "repro_script": true,
+     "repro_before": "REPRO: FAIL",
+     "repro_after": "REPRO: PASS",
+     "acceptance": true,
+     "report": true,
+     "acceptance_items": {
+      "verified": 10,
+      "unobservable": 0,
+      "not_done": 0
+     },
+     "passed": true
+    },
+    "patch_bytes": 3081,
+    "patch_sha256": "507c3f8162d8aa19f5792b4aa118b1974d59a4062303fcc6b037a042d17845f3",
+    "files_changed": [
+     "MVP-S/v26/customers/modern-order/api/custom-search-config.cfm",
+     "MVP-S/v26/customers/modern-order/api/includes/modern-order-empty-item-helpers.cfm"
+    ],
+    "result": {
+     "label": "e1",
+     "passed": 1,
+     "total": 9,
+     "summary": "letter_config_requires_no_row_address=FAIL letter_custom_field_still_required=FAIL submission_helper_requires_no_row_address_for_letter=FAIL county_requirements_preserved=FAIL state_requirements_preserved=FAIL international_requirements_preserved=FAIL i9_requirements_preserved=PASS secondary_requirements_api_has_no_row_address_for_letter=FAIL renderer_emits_no_required_address_controls_for_letter=FAIL",
+     "image": "t3-sandbox:538",
+     "finished": "2026-09-11T14:41:00Z",
+     "checkSha256": "116747677a8231669a0d9ac95399f767782c44955b3947bcd90ffa6c42c112fa"
+    },
+    "outcome": "FAIL",
+    "recordedAt": "2026-09-11T14:41:00.106356+00:00"
+   }
+  }
  },
  "CASE-024": {
   "agent": {
