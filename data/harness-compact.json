@@ -239,6 +239,45 @@
   },
   "intakeVersion": null
  },
+ "CASE-010": {
+  "agent": {
+   "duration_ms": 513118,
+   "total_cost_usd": 2.39410975,
+   "num_turns": 35,
+   "started_at": "2026-09-11T04:46:29Z",
+   "finished_at": "2026-09-11T04:55:03Z"
+  },
+  "files": [
+   "MVP-R/ADMIN/accounting/csv_export_set.cfm"
+  ],
+  "patch_bytes": 879,
+  "base": {
+   "passed": 2,
+   "total": 7,
+   "summary": "export_settings_page_renders=PASS report_id_offered_in_default_detail_fields=FAIL report_id_offered_with_package_reference_code=FAIL report_id_offered_with_second_reference=FAIL report_id_offered_with_single_reference_code=FAIL details_disabled_still_hides_detail_fields=PASS export_file_carries_the_report_id=FAIL"
+  },
+  "human": {
+   "passed": 7,
+   "total": 7,
+   "summary": "export_settings_page_renders=PASS report_id_offered_in_default_detail_fields=PASS report_id_offered_with_package_reference_code=PASS report_id_offered_with_second_reference=PASS report_id_offered_with_single_reference_code=PASS details_disabled_still_hides_detail_fields=PASS export_file_carries_the_report_id=PASS"
+  },
+  "harness": {
+   "passed": 7,
+   "total": 7,
+   "summary": "export_settings_page_renders=PASS report_id_offered_in_default_detail_fields=PASS report_id_offered_with_package_reference_code=PASS report_id_offered_with_second_reference=PASS report_id_offered_with_single_reference_code=PASS details_disabled_still_hides_detail_fields=PASS export_file_carries_the_report_id=PASS"
+  },
+  "batch": "003",
+  "evaluatorNote": null,
+  "humanHours": 48,
+  "meta": {
+   "issue": "OS-6460",
+   "pr": 255,
+   "prTitle": "added the 'report_id' to the export",
+   "merged": "2026-05-14T14:25:38+00:00",
+   "summary": "Request to include Report ID on the CSV Invoice Export"
+  },
+  "intakeVersion": null
+ },
  "CASE-019": {
   "agent": {
    "duration_ms": 260543,
