@@ -1,4 +1,45 @@
 {
+ "CASE-023": {
+  "agent": {
+   "duration_ms": 579366,
+   "total_cost_usd": 2.88693645,
+   "num_turns": 43,
+   "started_at": "2026-09-11T01:28:38Z",
+   "finished_at": "2026-09-11T01:38:16Z"
+  },
+  "files": [
+   "MVP-S/v26/customers/modern-order/api/custom-search-config.cfm",
+   "MVP-S/v26/customers/modern-order/api/includes/modern-order-empty-item-helpers.cfm",
+   "MVP-S/v26/customers/modern-order/api/search-required-fields.cfm"
+  ],
+  "patch_bytes": 6978,
+  "base": {
+   "passed": 1,
+   "total": 9,
+   "summary": "letter_config_requires_no_row_address=FAIL letter_custom_field_still_required=FAIL submission_helper_requires_no_row_address_for_letter=FAIL county_requirements_preserved=FAIL state_requirements_preserved=FAIL international_requirements_preserved=FAIL i9_requirements_preserved=PASS secondary_requirements_api_has_no_row_address_for_letter=FAIL renderer_emits_no_required_address_controls_for_letter=FAIL"
+  },
+  "human": {
+   "passed": 9,
+   "total": 9,
+   "summary": "letter_config_requires_no_row_address=PASS letter_custom_field_still_required=PASS submission_helper_requires_no_row_address_for_letter=PASS county_requirements_preserved=PASS state_requirements_preserved=PASS international_requirements_preserved=PASS i9_requirements_preserved=PASS secondary_requirements_api_has_no_row_address_for_letter=PASS renderer_emits_no_required_address_controls_for_letter=PASS"
+  },
+  "harness": {
+   "passed": 1,
+   "total": 9,
+   "summary": "letter_config_requires_no_row_address=FAIL letter_custom_field_still_required=FAIL submission_helper_requires_no_row_address_for_letter=FAIL county_requirements_preserved=FAIL state_requirements_preserved=FAIL international_requirements_preserved=FAIL i9_requirements_preserved=PASS secondary_requirements_api_has_no_row_address_for_letter=FAIL renderer_emits_no_required_address_controls_for_letter=FAIL"
+  },
+  "batch": "006",
+  "evaluatorNote": null,
+  "humanHours": 1,
+  "meta": {
+   "issue": "OS-6570",
+   "pr": 318,
+   "prTitle": "Lucee/OS-6570 remove address from adverse pre",
+   "merged": "2026-06-12T19:11:37+00:00",
+   "summary": "V26 HR Module: Pre-Adverse and Adverse Action Letters"
+  },
+  "intakeVersion": null
+ },
  "CASE-024": {
   "agent": {
    "duration_ms": 532359,
