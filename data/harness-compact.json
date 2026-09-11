@@ -692,7 +692,65 @@
      "checkSha256": "116747677a8231669a0d9ac95399f767782c44955b3947bcd90ffa6c42c112fa"
     },
     "outcome": "FAIL",
-    "recordedAt": "2026-09-11T14:41:00.106356+00:00"
+    "review": {
+     "verdict": "CHANGES_REQUESTED",
+     "findings": 3,
+     "blocking_or_major": 3,
+     "duration_ms": 384818,
+     "total_cost_usd": 2.0663514999999997,
+     "num_turns": 37
+    },
+    "recordedAt": "2026-09-11T14:47:32.278177+00:00"
+   },
+   "v2-try2": {
+    "process": "v2",
+    "from": "v2-try1",
+    "feedbackSha256": "2d354eeae6aac54792ebf0d6ae9d8000202f789be624ace881217bb53ea2f531",
+    "taskSha256": "a8db2a3aa761f92687387036fa4461df79292343c3f4ad3cbfaa91891368cd77",
+    "agent": {
+     "started_at": "2026-09-11T14:47:32Z",
+     "finished_at": "2026-09-11T14:56:29Z",
+     "duration_ms": 532049,
+     "duration_api_ms": 528764,
+     "num_turns": 52,
+     "total_cost_usd": 3.3559485000000002,
+     "session_id": "4d3a189e-4c8f-4097-a501-a0670af5676d",
+     "is_error": false,
+     "subtype": "success",
+     "agent_exit": "0",
+     "image": "t3-sandbox:538"
+    },
+    "gate": {
+     "repro_script": true,
+     "repro_before": "REPRO: FAIL",
+     "repro_after": "REPRO: PASS",
+     "acceptance": true,
+     "report": true,
+     "acceptance_items": {
+      "verified": 12,
+      "unobservable": 0,
+      "not_done": 0
+     },
+     "passed": true
+    },
+    "patch_bytes": 7327,
+    "patch_sha256": "d9976df87aa23b791c5ad591b5c2c7b16ab066e28830bcbececfff4ef5f03441",
+    "files_changed": [
+     "MVP-S/v26/customers/modern-order/api/custom-search-config.cfm",
+     "MVP-S/v26/customers/modern-order/api/includes/modern-order-empty-item-helpers.cfm",
+     "MVP-S/v26/customers/modern-order/api/search-required-fields.cfm"
+    ],
+    "result": {
+     "label": "e1",
+     "passed": 1,
+     "total": 9,
+     "summary": "letter_config_requires_no_row_address=FAIL letter_custom_field_still_required=FAIL submission_helper_requires_no_row_address_for_letter=FAIL county_requirements_preserved=FAIL state_requirements_preserved=FAIL international_requirements_preserved=FAIL i9_requirements_preserved=PASS secondary_requirements_api_has_no_row_address_for_letter=FAIL renderer_emits_no_required_address_controls_for_letter=FAIL",
+     "image": "t3-sandbox:538",
+     "finished": "2026-09-11T14:56:39Z",
+     "checkSha256": "116747677a8231669a0d9ac95399f767782c44955b3947bcd90ffa6c42c112fa"
+    },
+    "outcome": "FAIL",
+    "recordedAt": "2026-09-11T14:56:39.599084+00:00"
    }
   }
  },
