@@ -398,7 +398,70 @@
      "checkSha256": "b946d2a02cb5ea9657ebfc37c742c05aa53d77aac4ea12cec793709ea5041174"
     },
     "outcome": "FAIL",
-    "recordedAt": "2026-09-11T16:46:48.960725+00:00"
+    "review": {
+     "verdict": "CHANGES_REQUESTED",
+     "findings": 5,
+     "blocking_or_major": 4,
+     "duration_ms": 727695,
+     "total_cost_usd": 3.20192275,
+     "num_turns": 54
+    },
+    "recordedAt": "2026-09-11T16:59:05.000010+00:00"
+   },
+   "v2-try2": {
+    "process": "v2",
+    "from": "v2-try1",
+    "feedbackSha256": "fea56c6dd8304b8d99e22c5acb5b4684334d120fe613cd8866b8d25ea5444ce3",
+    "taskSha256": "601ee14eeff88db74c0a1002bac3382272664d3a31cbdfa9365c7855f801b207",
+    "agent": {
+     "started_at": "2026-09-11T16:59:05Z",
+     "finished_at": "2026-09-11T17:27:46Z",
+     "duration_ms": 1716614,
+     "duration_api_ms": 1152098,
+     "num_turns": 119,
+     "total_cost_usd": 9.05137425,
+     "session_id": "708569ff-5d39-42dd-96db-6f7e22d84fa6",
+     "is_error": false,
+     "subtype": "success",
+     "agent_exit": "0",
+     "image": "t3-sandbox:538"
+    },
+    "gate": {
+     "repro_script": true,
+     "repro_before": "REPRO: FAIL",
+     "repro_after": "REPRO: PASS",
+     "acceptance": true,
+     "report": true,
+     "acceptance_items": {
+      "verified": 9,
+      "unobservable": 3,
+      "not_done": 2
+     },
+     "passed": false
+    },
+    "patch_bytes": 17569,
+    "patch_sha256": "fd4affc19cab25cc3d20e00a398de3c3f3a841dad514d52b7b320b8d6b913d8e",
+    "files_changed": [
+     "CUSTOMTAGS/viewresultsHTML.cfm",
+     "MVP/INCLUDES/results/cds.cfm",
+     "MVP/INCLUDES/results/empv.cfm",
+     "MVP/INCLUDES/results/empvts.cfm",
+     "MVP/INCLUDES/results/evct.cfm",
+     "MVP/INCLUDES/results/swcr.cfm",
+     "MVP/INCLUDES/results/sxof.cfm",
+     "MVP/INCLUDES/results/worc.cfm"
+    ],
+    "result": {
+     "label": "e1",
+     "passed": 5,
+     "total": 6,
+     "summary": "client_view_masks_dob_on_completed_search=PASS client_view_masks_dob_on_search_still_in_review=FAIL client_view_masks_dob_on_mvr_search=PASS admin_qa_review_view_keeps_full_dob=PASS setting_off_shows_full_dob_to_client=PASS results_render_without_error=PASS",
+     "image": "t3-sandbox:538",
+     "finished": "2026-09-11T17:27:56Z",
+     "checkSha256": "b946d2a02cb5ea9657ebfc37c742c05aa53d77aac4ea12cec793709ea5041174"
+    },
+    "outcome": "FAIL",
+    "recordedAt": "2026-09-11T17:27:56.247810+00:00"
    }
   }
  },
