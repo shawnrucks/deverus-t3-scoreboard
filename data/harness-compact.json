@@ -983,7 +983,57 @@
    "merged": "2026-06-18T20:28:44+00:00",
    "summary": "V26 HR Module: Client-side Activity History"
   },
-  "intakeVersion": null
+  "intakeVersion": null,
+  "attempts": {
+   "v2-try1": {
+    "process": "v2",
+    "from": null,
+    "feedbackSha256": null,
+    "taskSha256": "df700e35d7486d42eac78085ec75d98d456a455535ecb8835a3351873377fd81",
+    "agent": {
+     "started_at": "2026-09-11T14:08:23Z",
+     "finished_at": "2026-09-11T14:26:03Z",
+     "duration_ms": 1054846,
+     "duration_api_ms": 1049295,
+     "num_turns": 102,
+     "total_cost_usd": 8.01337075,
+     "session_id": "e9a0a6f2-fbcb-4c14-9b6d-f34a410a1e18",
+     "is_error": false,
+     "subtype": "success",
+     "agent_exit": "0",
+     "image": "t3-sandbox:538"
+    },
+    "gate": {
+     "repro_script": true,
+     "repro_before": "REPRO: FAIL",
+     "repro_after": "REPRO: PASS",
+     "acceptance": true,
+     "report": true,
+     "acceptance_items": {
+      "verified": 7,
+      "unobservable": 0,
+      "not_done": 0
+     },
+     "passed": true
+    },
+    "patch_bytes": 2800,
+    "patch_sha256": "892ff617aadd28b386461d19ba8662e61336075c8bd45dca88bbfd6e308def19",
+    "files_changed": [
+     "MVP-S/v26/customers/report-management/applicant-detail.cfm"
+    ],
+    "result": {
+     "label": "e1",
+     "passed": 5,
+     "total": 7,
+     "summary": "detail_page_renders=PASS report_history_shown_when_configured=FAIL history_rows_carry_date_and_acting_user=FAIL inactive_rows_excluded=PASS hidden_without_the_configuration_key=PASS empty_history_handled=PASS unrelated_details_preserved=PASS | supplementary: history_detail_rendered_safely=FAIL",
+     "image": "t3-sandbox:538",
+     "finished": "2026-09-11T14:26:13Z",
+     "checkSha256": "200f8c0945f08a5e4686d35b96f8181bab7205a3c352353216cf2cb73d7f99f9"
+    },
+    "outcome": "FAIL",
+    "recordedAt": "2026-09-11T14:26:13.237464+00:00"
+   }
+  }
  },
  "CASE-029": {
   "agent": {
