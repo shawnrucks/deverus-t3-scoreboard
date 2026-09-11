@@ -1,4 +1,43 @@
 {
+ "CASE-016": {
+  "agent": {
+   "duration_ms": 374594,
+   "total_cost_usd": 2.4437569999999997,
+   "num_turns": 39,
+   "started_at": "2026-09-11T03:35:03Z",
+   "finished_at": "2026-09-11T03:41:21Z"
+  },
+  "files": [
+   "MVP-S/v26/customers/modern-order/api/upload-document.cfm"
+  ],
+  "patch_bytes": 1384,
+  "base": {
+   "passed": 3,
+   "total": 6,
+   "summary": "ordering_upload_stores_the_document=PASS researcher_visible_when_the_tenant_defaults_to_yes=FAIL researcher_hidden_without_the_default=PASS separate_email_flag_follows_its_default=FAIL both_defaults_together=FAIL other_upload_metadata_unchanged=PASS"
+  },
+  "human": {
+   "passed": 6,
+   "total": 6,
+   "summary": "ordering_upload_stores_the_document=PASS researcher_visible_when_the_tenant_defaults_to_yes=PASS researcher_hidden_without_the_default=PASS separate_email_flag_follows_its_default=PASS both_defaults_together=PASS other_upload_metadata_unchanged=PASS"
+  },
+  "harness": {
+   "passed": 4,
+   "total": 6,
+   "summary": "ordering_upload_stores_the_document=PASS researcher_visible_when_the_tenant_defaults_to_yes=PASS researcher_hidden_without_the_default=PASS separate_email_flag_follows_its_default=FAIL both_defaults_together=FAIL other_upload_metadata_unchanged=PASS"
+  },
+  "batch": "003",
+  "evaluatorNote": null,
+  "humanHours": 3,
+  "meta": {
+   "issue": "OS-6538",
+   "pr": 299,
+   "prTitle": "v09 parity",
+   "merged": "2026-06-03T19:49:35+00:00",
+   "summary": "V26 HR Module: Investigate client-uploaded document visibility for Researcher"
+  },
+  "intakeVersion": null
+ },
  "CASE-019": {
   "agent": {
    "duration_ms": 260543,
