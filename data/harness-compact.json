@@ -854,7 +854,43 @@
    "merged": "2026-06-18T20:27:45+00:00",
    "summary": "V26 HR Module: SwiftHire With Review for applicant with Government ID instead of SSN"
   },
-  "intakeVersion": null
+  "intakeVersion": null,
+  "attempts": {
+   "v2-try1": {
+    "process": "v2",
+    "from": null,
+    "feedbackSha256": null,
+    "taskSha256": "f98ed902d5f0d44fc609ef2aaba606de205885cb894d15a6980f27a083a385a4",
+    "agent": {
+     "started_at": "2026-09-11T14:29:20Z",
+     "finished_at": "2026-09-11T14:29:26Z",
+     "duration_ms": null,
+     "duration_api_ms": null,
+     "num_turns": null,
+     "total_cost_usd": null,
+     "session_id": null,
+     "is_error": null,
+     "subtype": null,
+     "agent_exit": null,
+     "image": "t3-sandbox:538"
+    },
+    "gate": {
+     "repro_script": false,
+     "repro_before": "missing",
+     "repro_after": "missing",
+     "acceptance": false,
+     "report": false,
+     "acceptance_items": {
+      "verified": 0,
+      "unobservable": 0,
+      "not_done": 0
+     },
+     "passed": false
+    },
+    "patch_bytes": 0,
+    "recordedAt": "2026-09-11T14:29:26.130798+00:00"
+   }
+  }
  },
  "CASE-030": {
   "agent": {
