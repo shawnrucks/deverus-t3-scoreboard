@@ -2848,7 +2848,59 @@
    "merged": null,
    "summary": null
   },
-  "intakeVersion": null
+  "intakeVersion": null,
+  "attempts": {
+   "v2-try1": {
+    "process": "v2",
+    "from": null,
+    "feedbackSha256": null,
+    "taskSha256": "ab42933692692b0328b21c0fc462446b7a13432622bc6e7fd6352e6d83294a48",
+    "agent": {
+     "started_at": "2026-09-11T18:42:37Z",
+     "finished_at": "2026-09-11T19:06:36Z",
+     "duration_ms": 1434592,
+     "duration_api_ms": 1431132,
+     "num_turns": 62,
+     "total_cost_usd": 7.5077270500000015,
+     "session_id": "3aa193fe-b70c-4748-8860-810c7c856a7a",
+     "is_error": false,
+     "subtype": "success",
+     "agent_exit": "0",
+     "image": "t3-sandbox:538"
+    },
+    "gate": {
+     "repro_script": true,
+     "repro_before": "REPRO: FAIL",
+     "repro_after": "REPRO: PASS",
+     "acceptance": true,
+     "report": true,
+     "acceptance_items": {
+      "verified": 5,
+      "unobservable": 0,
+      "not_done": 0
+     },
+     "passed": true
+    },
+    "patch_bytes": 5921,
+    "patch_sha256": "e6c0aaa563bd1492a9ce00ee0a86cf278305d75c57fe961f917dedef434a9700",
+    "files_changed": [
+     "Components/CFCTAGS/integration/superInstantCriminal/backgroundReport.cfc",
+     "t3-case056-probe.cfm",
+     "t3-case056-seed.cfm"
+    ],
+    "result": {
+     "label": "e1",
+     "passed": 2,
+     "total": 5,
+     "summary": "supersearch_result_renders_all_records=FAIL supersearch_result_with_vendor_markup_quirks_renders_all_records=FAIL plain_qa_result_still_renders=PASS plain_qa_result_with_quirks_renders=PASS match_count_and_rows_agree=FAIL",
+     "image": "t3-sandbox:538",
+     "finished": "2026-09-11T19:06:44Z",
+     "checkSha256": "44d133ff53c2c4d31cfc1a15232b329f063a19905b9fdf35fb37dfe7752159a7"
+    },
+    "outcome": "FAIL",
+    "recordedAt": "2026-09-11T19:06:44.956582+00:00"
+   }
+  }
  },
  "CASE-057": {
   "agent": {
