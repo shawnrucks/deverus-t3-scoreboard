@@ -2186,6 +2186,42 @@
    },
    "first_try_workspace": "sandbox-cases/CASE-039-try1",
    "recorded_at": "2026-09-10T10:51:50.145213Z"
+  },
+  "attempts": {
+   "v2-try1": {
+    "process": "v2",
+    "from": null,
+    "feedbackSha256": null,
+    "taskSha256": "1d1d68bde007198e3b40f56419b7aa76cea798d20cd6ba0eaceff7c74dcebf64",
+    "agent": {
+     "started_at": "2026-09-11T18:18:24Z",
+     "finished_at": "2026-09-11T18:18:27Z",
+     "duration_ms": null,
+     "duration_api_ms": null,
+     "num_turns": null,
+     "total_cost_usd": null,
+     "session_id": null,
+     "is_error": null,
+     "subtype": null,
+     "agent_exit": null,
+     "image": "t3-sandbox:538"
+    },
+    "gate": {
+     "repro_script": false,
+     "repro_before": "missing",
+     "repro_after": "missing",
+     "acceptance": false,
+     "report": false,
+     "acceptance_items": {
+      "verified": 0,
+      "unobservable": 0,
+      "not_done": 0
+     },
+     "passed": false
+    },
+    "patch_bytes": 0,
+    "recordedAt": "2026-09-11T18:18:27.829029+00:00"
+   }
   }
  },
  "CASE-040": {
