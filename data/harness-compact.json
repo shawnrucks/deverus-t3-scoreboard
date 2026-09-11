@@ -454,7 +454,15 @@
      "checkSha256": "2c1960eaa13b67b6f982a3ad4e53be33e95c70b67a1f584a437586140674bb35"
     },
     "outcome": "FAIL",
-    "recordedAt": "2026-09-11T15:51:30.947738+00:00"
+    "review": {
+     "verdict": "APPROVE",
+     "findings": 1,
+     "blocking_or_major": 0,
+     "duration_ms": 203621,
+     "total_cost_usd": 0.9545947499999999,
+     "num_turns": 22
+    },
+    "recordedAt": "2026-09-11T15:55:02.732436+00:00"
    }
   }
  },
