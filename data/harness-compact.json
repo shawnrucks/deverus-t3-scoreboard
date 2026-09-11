@@ -1,4 +1,43 @@
 {
+ "CASE-013": {
+  "agent": {
+   "duration_ms": 425317,
+   "total_cost_usd": 1.83416375,
+   "num_turns": 41,
+   "started_at": "2026-09-11T04:11:47Z",
+   "finished_at": "2026-09-11T04:18:52Z"
+  },
+  "files": [
+   "MVP-S/v26/customers/modern-order/js/app.js"
+  ],
+  "patch_bytes": 1125,
+  "base": {
+   "passed": 5,
+   "total": 6,
+   "summary": "no_packages_single_on_api_allows_individual_searches=PASS no_packages_single_on_page_offers_individual_searches=FAIL no_packages_single_off_api_denies_individual_searches=PASS no_packages_single_off_page_shows_no_individual_card=PASS packages_with_single_on_unchanged=PASS no_page_errors=PASS"
+  },
+  "human": {
+   "passed": 6,
+   "total": 6,
+   "summary": "no_packages_single_on_api_allows_individual_searches=PASS no_packages_single_on_page_offers_individual_searches=PASS no_packages_single_off_api_denies_individual_searches=PASS no_packages_single_off_page_shows_no_individual_card=PASS packages_with_single_on_unchanged=PASS no_page_errors=PASS"
+  },
+  "harness": {
+   "passed": 6,
+   "total": 6,
+   "summary": "no_packages_single_on_api_allows_individual_searches=PASS no_packages_single_on_page_offers_individual_searches=PASS no_packages_single_off_api_denies_individual_searches=PASS no_packages_single_off_page_shows_no_individual_card=PASS packages_with_single_on_unchanged=PASS no_page_errors=PASS"
+  },
+  "batch": "003",
+  "evaluatorNote": null,
+  "humanHours": 11,
+  "meta": {
+   "issue": "OS-6505",
+   "pr": 287,
+   "prTitle": "If a client did not have a package or bundle they could not order a single search",
+   "merged": "2026-06-01T12:49:21+00:00",
+   "summary": "V26 HR Module: Clients that only order a la carte/individual searches and have no packages configured"
+  },
+  "intakeVersion": null
+ },
  "CASE-016": {
   "agent": {
    "duration_ms": 374594,
