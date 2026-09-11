@@ -117,6 +117,45 @@
   },
   "intakeVersion": null
  },
+ "CASE-008": {
+  "agent": {
+   "duration_ms": 441776,
+   "total_cost_usd": 2.0380577500000006,
+   "num_turns": 44,
+   "started_at": "2026-09-11T04:55:36Z",
+   "finished_at": "2026-09-11T05:03:00Z"
+  },
+  "files": [
+   "Components/CFCTAGS/system/order/swiftHire.cfc"
+  ],
+  "patch_bytes": 3463,
+  "base": {
+   "passed": 3,
+   "total": 5,
+   "summary": "white_button_readable_link_kept=FAIL short_white_button_readable_link_kept=FAIL black_button_readable_link_kept=PASS mid_gray_button_readable_link_kept=PASS blue_button_readable_link_kept=PASS"
+  },
+  "human": {
+   "passed": 5,
+   "total": 5,
+   "summary": "white_button_readable_link_kept=PASS short_white_button_readable_link_kept=PASS black_button_readable_link_kept=PASS mid_gray_button_readable_link_kept=PASS blue_button_readable_link_kept=PASS"
+  },
+  "harness": {
+   "passed": 5,
+   "total": 5,
+   "summary": "white_button_readable_link_kept=PASS short_white_button_readable_link_kept=PASS black_button_readable_link_kept=PASS mid_gray_button_readable_link_kept=PASS blue_button_readable_link_kept=PASS"
+  },
+  "batch": "003",
+  "evaluatorNote": null,
+  "humanHours": 71,
+  "meta": {
+   "issue": "OS-6423",
+   "pr": 228,
+   "prTitle": "Lucee/OS-6423 SwiftHire EmailButtonReadability",
+   "merged": "2026-03-19T15:47:00+00:00",
+   "summary": "SwiftHire \u2014 Client brand colors cause email readability failures on light/dark backgrounds"
+  },
+  "intakeVersion": null
+ },
  "CASE-014": {
   "agent": {
    "duration_ms": 812531,
