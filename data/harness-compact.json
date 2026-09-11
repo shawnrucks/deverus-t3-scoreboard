@@ -166,7 +166,57 @@
    "merged": "2026-06-03T19:49:35+00:00",
    "summary": "V26 HR Module: Investigate client-uploaded document visibility for Researcher"
   },
-  "intakeVersion": null
+  "intakeVersion": null,
+  "attempts": {
+   "v2-try1": {
+    "process": "v2",
+    "from": null,
+    "feedbackSha256": null,
+    "taskSha256": "e36926324e607e7bc9661c12e5baee4c8326b54487135d0adc077ba5a1cf1e3c",
+    "agent": {
+     "started_at": "2026-09-11T15:55:04Z",
+     "finished_at": "2026-09-11T16:08:38Z",
+     "duration_ms": 808371,
+     "duration_api_ms": 706444,
+     "num_turns": 58,
+     "total_cost_usd": 3.6307970000000003,
+     "session_id": "6a35e2ee-bdf8-455f-b034-b047acc38366",
+     "is_error": false,
+     "subtype": "success",
+     "agent_exit": "0",
+     "image": "t3-sandbox:538"
+    },
+    "gate": {
+     "repro_script": true,
+     "repro_before": "REPRO: FAIL",
+     "repro_after": "REPRO: PASS",
+     "acceptance": true,
+     "report": true,
+     "acceptance_items": {
+      "verified": 5,
+      "unobservable": 0,
+      "not_done": 0
+     },
+     "passed": true
+    },
+    "patch_bytes": 1362,
+    "patch_sha256": "8dfcb72373d3364cfa07fa821cb233aa4ef159bd2f20523898ad8c8b9de0a1a1",
+    "files_changed": [
+     "MVP-S/v26/customers/modern-order/api/upload-document.cfm"
+    ],
+    "result": {
+     "label": "e1",
+     "passed": 4,
+     "total": 6,
+     "summary": "ordering_upload_stores_the_document=PASS researcher_visible_when_the_tenant_defaults_to_yes=PASS researcher_hidden_without_the_default=PASS separate_email_flag_follows_its_default=FAIL both_defaults_together=FAIL other_upload_metadata_unchanged=PASS",
+     "image": "t3-sandbox:538",
+     "finished": "2026-09-11T16:08:46Z",
+     "checkSha256": "6bc9509503da1f41d0b2d97e105b489311d191087d4f8cc6d3a0ff594b029872"
+    },
+    "outcome": "FAIL",
+    "recordedAt": "2026-09-11T16:08:46.876874+00:00"
+   }
+  }
  },
  "CASE-008": {
   "agent": {
