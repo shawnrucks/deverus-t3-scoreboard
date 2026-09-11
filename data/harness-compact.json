@@ -1,4 +1,44 @@
 {
+ "CASE-024": {
+  "agent": {
+   "duration_ms": 532359,
+   "total_cost_usd": 2.412703,
+   "num_turns": 34,
+   "started_at": "2026-09-11T01:19:47Z",
+   "finished_at": "2026-09-11T01:28:38Z"
+  },
+  "files": [
+   "MVP-S/v26/customers/modern-order/js/api.js",
+   "MVP-S/v26/customers/modern-order/js/app.js"
+  ],
+  "patch_bytes": 9170,
+  "base": {
+   "passed": 9,
+   "total": 12,
+   "summary": "expired_session_on_api_path_returns_json_401=FAIL logged_in_api_call_passes_the_guard=PASS legacy_page_still_redirects_to_login=PASS client_reports_expired_session_clearly_over_real_http=FAIL client_normal_result_over_real_http=PASS client_normal_json=PASS client_expired_json=PASS client_redirected_login_html=FAIL client_server_error_json=PASS client_network_error=PASS client_redirected_successful_json=PASS client_nonlogin_server_error_html=PASS"
+  },
+  "human": {
+   "passed": 12,
+   "total": 12,
+   "summary": "expired_session_on_api_path_returns_json_401=PASS logged_in_api_call_passes_the_guard=PASS legacy_page_still_redirects_to_login=PASS client_reports_expired_session_clearly_over_real_http=PASS client_normal_result_over_real_http=PASS client_normal_json=PASS client_expired_json=PASS client_redirected_login_html=PASS client_server_error_json=PASS client_network_error=PASS client_redirected_successful_json=PASS client_nonlogin_server_error_html=PASS"
+  },
+  "harness": {
+   "passed": 9,
+   "total": 12,
+   "summary": "expired_session_on_api_path_returns_json_401=FAIL logged_in_api_call_passes_the_guard=PASS legacy_page_still_redirects_to_login=PASS client_reports_expired_session_clearly_over_real_http=FAIL client_normal_result_over_real_http=PASS client_normal_json=PASS client_expired_json=PASS client_redirected_login_html=PASS client_server_error_json=PASS client_network_error=PASS client_redirected_successful_json=FAIL client_nonlogin_server_error_html=PASS"
+  },
+  "batch": "006",
+  "evaluatorNote": null,
+  "humanHours": 23,
+  "meta": {
+   "issue": "OS-6573",
+   "pr": 325,
+   "prTitle": "v26 client timeout managment",
+   "merged": "2026-06-17T20:13:19+00:00",
+   "summary": "V26 HR Module: Investigate Unexpected token error message"
+  },
+  "intakeVersion": null
+ },
  "CASE-025": {
   "agent": {
    "duration_ms": 670872,
