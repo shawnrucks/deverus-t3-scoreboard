@@ -302,7 +302,57 @@
    "merged": "2026-06-01T22:04:49+00:00",
    "summary": "V26 HR Module: Photo Matching on E-Verify searches results in an error"
   },
-  "intakeVersion": null
+  "intakeVersion": null,
+  "attempts": {
+   "v2-try1": {
+    "process": "v2",
+    "from": null,
+    "feedbackSha256": null,
+    "taskSha256": "9a985d8f692978aa699e8614439d5378e189b9433252fb29bb8968e806002776",
+    "agent": {
+     "started_at": "2026-09-11T17:27:58Z",
+     "finished_at": "2026-09-11T18:13:02Z",
+     "duration_ms": 2697662,
+     "duration_api_ms": 1782750,
+     "num_turns": 136,
+     "total_cost_usd": 13.073348249999997,
+     "session_id": "2e0bf84c-36c3-48ae-8b3b-cf59ff6682e3",
+     "is_error": false,
+     "subtype": "success",
+     "agent_exit": "0",
+     "image": "t3-sandbox:538"
+    },
+    "gate": {
+     "repro_script": true,
+     "repro_before": "REPRO: FAIL",
+     "repro_after": "REPRO: PASS",
+     "acceptance": true,
+     "report": true,
+     "acceptance_items": {
+      "verified": 5,
+      "unobservable": 0,
+      "not_done": 0
+     },
+     "passed": true
+    },
+    "patch_bytes": 3623,
+    "patch_sha256": "63e8ec295c15478cc7899fce84214037a034a5a7061bffea617401aae909b8ae",
+    "files_changed": [
+     "MVP-S/v26/customers/report-management/applicant-detail.cfm"
+    ],
+    "result": {
+     "label": "e1",
+     "passed": 4,
+     "total": 5,
+     "summary": "detail_page_renders_the_more_info_notes=PASS photo_verification_offers_matching_not_matching_no_image=PASS photo_identification_keeps_legacy_yes_no=FAIL generic_note_keeps_free_text_response=PASS release_form_note_keeps_its_checkbox=PASS",
+     "image": "t3-sandbox:538",
+     "finished": "2026-09-11T18:13:11Z",
+     "checkSha256": "983e3500ea6737ef9141959f09286f939fbb5a0b0fa3d5389ea0103ce3ed2262"
+    },
+    "outcome": "FAIL",
+    "recordedAt": "2026-09-11T18:13:11.466315+00:00"
+   }
+  }
  },
  "CASE-015": {
   "agent": {
