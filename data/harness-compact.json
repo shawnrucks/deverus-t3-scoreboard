@@ -2898,7 +2898,63 @@
      "checkSha256": "44d133ff53c2c4d31cfc1a15232b329f063a19905b9fdf35fb37dfe7752159a7"
     },
     "outcome": "FAIL",
-    "recordedAt": "2026-09-11T19:06:44.956582+00:00"
+    "review": {
+     "verdict": "CHANGES_REQUESTED",
+     "findings": 5,
+     "blocking_or_major": 4,
+     "duration_ms": 330244,
+     "total_cost_usd": 1.4240387499999998,
+     "num_turns": 20
+    },
+    "recordedAt": "2026-09-11T19:12:21.574228+00:00"
+   },
+   "v2-try2": {
+    "process": "v2",
+    "from": "v2-try1",
+    "feedbackSha256": "fbc670be124f9793469f5b396f728763d771227b6fd3e336042ff56fd4513015",
+    "taskSha256": "f73dc6d4c4f57fa50b787190cb7ed9c045c46e73c59a6313e0e8b54ed42c36ad",
+    "agent": {
+     "started_at": "2026-09-11T19:12:21Z",
+     "finished_at": "2026-09-11T19:32:25Z",
+     "duration_ms": 1201257,
+     "duration_api_ms": 1188345,
+     "num_turns": 36,
+     "total_cost_usd": 6.861404299999999,
+     "session_id": "ddb7a13c-bec9-4ed5-ace5-16afc1e7a4f9",
+     "is_error": false,
+     "subtype": "success",
+     "agent_exit": "0",
+     "image": "t3-sandbox:538"
+    },
+    "gate": {
+     "repro_script": true,
+     "repro_before": "REPRO: FAIL",
+     "repro_after": "REPRO: PASS",
+     "acceptance": true,
+     "report": true,
+     "acceptance_items": {
+      "verified": 10,
+      "unobservable": 2,
+      "not_done": 0
+     },
+     "passed": true
+    },
+    "patch_bytes": 2398,
+    "patch_sha256": "ef36528fcc47e9f5e927f8d7cbfd70082f8607df9ab4e00f41ca1df785d2a681",
+    "files_changed": [
+     "Components/CFCTAGS/integration/superInstantCriminal/backgroundReport.cfc"
+    ],
+    "result": {
+     "label": "e1",
+     "passed": 2,
+     "total": 5,
+     "summary": "supersearch_result_renders_all_records=FAIL supersearch_result_with_vendor_markup_quirks_renders_all_records=FAIL plain_qa_result_still_renders=PASS plain_qa_result_with_quirks_renders=PASS match_count_and_rows_agree=FAIL",
+     "image": "t3-sandbox:538",
+     "finished": "2026-09-11T19:32:33Z",
+     "checkSha256": "44d133ff53c2c4d31cfc1a15232b329f063a19905b9fdf35fb37dfe7752159a7"
+    },
+    "outcome": "FAIL",
+    "recordedAt": "2026-09-11T19:32:33.401837+00:00"
    }
   }
  },
