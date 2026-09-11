@@ -1,4 +1,44 @@
 {
+ "CASE-020": {
+  "agent": {
+   "duration_ms": 658925,
+   "total_cost_usd": 3.4477487499999997,
+   "num_turns": 55,
+   "started_at": "2026-09-11T02:37:14Z",
+   "finished_at": "2026-09-11T02:48:16Z"
+  },
+  "files": [
+   "MVP-S/v26/customers/modern-order/api/includes/modern-order-build-model-body.cfm",
+   "MVP-S/v26/customers/modern-order/api/includes/modern-order-empty-item-helpers.cfm"
+  ],
+  "patch_bytes": 6034,
+  "base": {
+   "passed": 4,
+   "total": 8,
+   "summary": "drafts_build_through_real_save_draft=PASS employment_iso_dates_mapped_to_us_format=FAIL education_iso_dates_mapped_to_us_format=FAIL employment_timeline_variant_mapped_too=FAIL v09_field_names_present=PASS currently_employed_preserved=FAIL empty_dates_stay_empty=PASS us_and_free_text_dates_untouched=PASS"
+  },
+  "human": {
+   "passed": 8,
+   "total": 8,
+   "summary": "drafts_build_through_real_save_draft=PASS employment_iso_dates_mapped_to_us_format=PASS education_iso_dates_mapped_to_us_format=PASS employment_timeline_variant_mapped_too=PASS v09_field_names_present=PASS currently_employed_preserved=PASS empty_dates_stay_empty=PASS us_and_free_text_dates_untouched=PASS"
+  },
+  "harness": {
+   "passed": 8,
+   "total": 8,
+   "summary": "drafts_build_through_real_save_draft=PASS employment_iso_dates_mapped_to_us_format=PASS education_iso_dates_mapped_to_us_format=PASS employment_timeline_variant_mapped_too=PASS v09_field_names_present=PASS currently_employed_preserved=PASS empty_dates_stay_empty=PASS us_and_free_text_dates_untouched=PASS"
+  },
+  "batch": "005",
+  "evaluatorNote": null,
+  "humanHours": 5,
+  "meta": {
+   "issue": "OS-6563",
+   "pr": 312,
+   "prTitle": "Lucee/OS-6563 dates for eduv empv format",
+   "merged": "2026-06-10T20:57:36+00:00",
+   "summary": "V26 HR Module: EMPV Dates saving in the incorrect format"
+  },
+  "intakeVersion": null
+ },
  "CASE-022": {
   "agent": {
    "duration_ms": 2491237,
