@@ -1,4 +1,41 @@
 {
+ "CASE-022": {
+  "agent": {
+   "duration_ms": 2491237,
+   "total_cost_usd": 6.927988249999999,
+   "num_turns": 58,
+   "started_at": "2026-09-11T01:40:25Z",
+   "finished_at": "2026-09-11T02:21:47Z"
+  },
+  "files": [],
+  "patch_bytes": 0,
+  "base": {
+   "passed": 9,
+   "total": 10,
+   "summary": "dashboard_renders_count_tiles=PASS remembered_all_users_view_counts_all_users=PASS remembered_current_user_view_counts_own=PASS configured_all_users_default_with_permission=PASS configured_all_users_default_denied_without_permission=PASS missing_all_users_setting_stays_own=PASS legacy_all_users_default_counts_all_users=PASS no_setting_defaults_to_own=PASS swifthire_tile_shown_when_enabled_even_with_nothing_pending=FAIL swifthire_tile_hidden_when_module_disabled=PASS"
+  },
+  "human": {
+   "passed": 10,
+   "total": 10,
+   "summary": "dashboard_renders_count_tiles=PASS remembered_all_users_view_counts_all_users=PASS remembered_current_user_view_counts_own=PASS configured_all_users_default_with_permission=PASS configured_all_users_default_denied_without_permission=PASS missing_all_users_setting_stays_own=PASS legacy_all_users_default_counts_all_users=PASS no_setting_defaults_to_own=PASS swifthire_tile_shown_when_enabled_even_with_nothing_pending=PASS swifthire_tile_hidden_when_module_disabled=PASS"
+  },
+  "harness": {
+   "passed": 9,
+   "total": 10,
+   "summary": "dashboard_renders_count_tiles=PASS remembered_all_users_view_counts_all_users=PASS remembered_current_user_view_counts_own=PASS configured_all_users_default_with_permission=PASS configured_all_users_default_denied_without_permission=PASS missing_all_users_setting_stays_own=PASS legacy_all_users_default_counts_all_users=PASS no_setting_defaults_to_own=PASS swifthire_tile_shown_when_enabled_even_with_nothing_pending=FAIL swifthire_tile_hidden_when_module_disabled=PASS"
+  },
+  "batch": "005",
+  "evaluatorNote": null,
+  "humanHours": 1,
+  "meta": {
+   "issue": "OS-6567",
+   "pr": 319,
+   "prTitle": "updated code so show SHM tile even if 0/0, if sh enabled.",
+   "merged": "2026-06-12T19:09:42+00:00",
+   "summary": "V26 HR Module: Home page numbers do not reflect user settings as V09 Home page did"
+  },
+  "intakeVersion": null
+ },
  "CASE-023": {
   "agent": {
    "duration_ms": 579366,
