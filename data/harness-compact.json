@@ -38,6 +38,45 @@
   },
   "intakeVersion": null
  },
+ "CASE-014": {
+  "agent": {
+   "duration_ms": 812531,
+   "total_cost_usd": 4.2899425,
+   "num_turns": 59,
+   "started_at": "2026-09-11T03:58:03Z",
+   "finished_at": "2026-09-11T04:11:36Z"
+  },
+  "files": [
+   "MVP-S/v26/customers/report-management/applicant-detail.cfm"
+  ],
+  "patch_bytes": 3453,
+  "base": {
+   "passed": 3,
+   "total": 5,
+   "summary": "detail_page_renders_the_more_info_notes=PASS photo_verification_offers_matching_not_matching_no_image=FAIL photo_identification_keeps_legacy_yes_no=FAIL generic_note_keeps_free_text_response=PASS release_form_note_keeps_its_checkbox=PASS"
+  },
+  "human": {
+   "passed": 5,
+   "total": 5,
+   "summary": "detail_page_renders_the_more_info_notes=PASS photo_verification_offers_matching_not_matching_no_image=PASS photo_identification_keeps_legacy_yes_no=PASS generic_note_keeps_free_text_response=PASS release_form_note_keeps_its_checkbox=PASS"
+  },
+  "harness": {
+   "passed": 4,
+   "total": 5,
+   "summary": "detail_page_renders_the_more_info_notes=PASS photo_verification_offers_matching_not_matching_no_image=PASS photo_identification_keeps_legacy_yes_no=FAIL generic_note_keeps_free_text_response=PASS release_form_note_keeps_its_checkbox=PASS"
+  },
+  "batch": "003",
+  "evaluatorNote": null,
+  "humanHours": 3,
+  "meta": {
+   "issue": "OS-6523",
+   "pr": 289,
+   "prTitle": "added parity to v09 for photo matching and everifty",
+   "merged": "2026-06-01T22:04:49+00:00",
+   "summary": "V26 HR Module: Photo Matching on E-Verify searches results in an error"
+  },
+  "intakeVersion": null
+ },
  "CASE-015": {
   "agent": {
    "duration_ms": 976849,
