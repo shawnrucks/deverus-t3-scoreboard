@@ -200,6 +200,45 @@
   },
   "intakeVersion": null
  },
+ "CASE-011": {
+  "agent": {
+   "duration_ms": 550112,
+   "total_cost_usd": 2.3911393999999992,
+   "num_turns": 27,
+   "started_at": "2026-09-11T04:37:01Z",
+   "finished_at": "2026-09-11T04:46:12Z"
+  },
+  "files": [
+   "MVP-R/ADMIN/Report_Order/Action/UpdateApplicant_Action.cfm"
+  ],
+  "patch_bytes": 1122,
+  "base": {
+   "passed": 2,
+   "total": 5,
+   "summary": "single_digit_month_and_day_stored_two_digit_or_refused=FAIL single_digit_day_with_two_digit_month_stored_two_digit_or_refused=FAIL two_digit_input_stored_unchanged=PASS partial_dob_sentinel_preserved=PASS no_stored_single_digit_values=FAIL | supplementary: admin_form_inputs_normalise_single_digits_in_browser=FAIL"
+  },
+  "human": {
+   "passed": 5,
+   "total": 5,
+   "summary": "single_digit_month_and_day_stored_two_digit_or_refused=PASS single_digit_day_with_two_digit_month_stored_two_digit_or_refused=PASS two_digit_input_stored_unchanged=PASS partial_dob_sentinel_preserved=PASS no_stored_single_digit_values=PASS | supplementary: admin_form_inputs_normalise_single_digits_in_browser=PASS"
+  },
+  "harness": {
+   "passed": 5,
+   "total": 5,
+   "summary": "single_digit_month_and_day_stored_two_digit_or_refused=PASS single_digit_day_with_two_digit_month_stored_two_digit_or_refused=PASS two_digit_input_stored_unchanged=PASS partial_dob_sentinel_preserved=PASS no_stored_single_digit_values=PASS | supplementary: admin_form_inputs_normalise_single_digits_in_browser=FAIL"
+  },
+  "batch": "003",
+  "evaluatorNote": null,
+  "humanHours": 1,
+  "meta": {
+   "issue": "OS-6494",
+   "pr": 256,
+   "prTitle": "admin order DOB: enforce mm/dd/yyyy by zero-padding month and day",
+   "merged": "2026-05-15T15:38:40+00:00",
+   "summary": "Request to update Admin Ordering DOB validation to require MM/DD/YYYY format"
+  },
+  "intakeVersion": null
+ },
  "CASE-019": {
   "agent": {
    "duration_ms": 260543,
