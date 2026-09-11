@@ -1,4 +1,44 @@
 {
+ "CASE-026": {
+  "agent": {
+   "duration_ms": 433934,
+   "total_cost_usd": 3.083857,
+   "num_turns": 60,
+   "started_at": "2026-09-11T01:01:29Z",
+   "finished_at": "2026-09-11T01:08:40Z"
+  },
+  "files": [
+   "MVP-S/v26/customers/modern-order/js/app.js",
+   "MVP-S/v26/customers/modern-order/js/components.js"
+  ],
+  "patch_bytes": 2957,
+  "base": {
+   "passed": 12,
+   "total": 17,
+   "summary": "citizen1:drivers_missing_support=FAIL citizen1:drivers_whitespace_support=FAIL citizen1:drivers_complete=PASS citizen1:other_list_b_no_support=PASS citizen1:list_a_no_support=PASS citizen1:missing_hire_date=PASS citizen1:missing_list_c=PASS citizen4:drivers_missing_support=FAIL citizen4:drivers_whitespace_support=FAIL citizen4:drivers_complete=PASS citizen4:other_list_b_no_support=PASS citizen4:list_a_no_support=PASS citizen4:missing_hire_date=PASS citizen4:missing_list_c=PASS label:drivers_required=FAIL label:other_list_b_not_required=PASS label:empty_list_b_not_required=PASS"
+  },
+  "human": {
+   "passed": 17,
+   "total": 17,
+   "summary": "citizen1:drivers_missing_support=PASS citizen1:drivers_whitespace_support=PASS citizen1:drivers_complete=PASS citizen1:other_list_b_no_support=PASS citizen1:list_a_no_support=PASS citizen1:missing_hire_date=PASS citizen1:missing_list_c=PASS citizen4:drivers_missing_support=PASS citizen4:drivers_whitespace_support=PASS citizen4:drivers_complete=PASS citizen4:other_list_b_no_support=PASS citizen4:list_a_no_support=PASS citizen4:missing_hire_date=PASS citizen4:missing_list_c=PASS label:drivers_required=PASS label:other_list_b_not_required=PASS label:empty_list_b_not_required=PASS"
+  },
+  "harness": {
+   "passed": 17,
+   "total": 17,
+   "summary": "citizen1:drivers_missing_support=PASS citizen1:drivers_whitespace_support=PASS citizen1:drivers_complete=PASS citizen1:other_list_b_no_support=PASS citizen1:list_a_no_support=PASS citizen1:missing_hire_date=PASS citizen1:missing_list_c=PASS citizen4:drivers_missing_support=PASS citizen4:drivers_whitespace_support=PASS citizen4:drivers_complete=PASS citizen4:other_list_b_no_support=PASS citizen4:list_a_no_support=PASS citizen4:missing_hire_date=PASS citizen4:missing_list_c=PASS label:drivers_required=PASS label:other_list_b_not_required=PASS label:empty_list_b_not_required=PASS"
+  },
+  "batch": "007",
+  "evaluatorNote": null,
+  "humanHours": 1,
+  "meta": {
+   "issue": "OS-6579",
+   "pr": 327,
+   "prTitle": "required supporting document for e-verify",
+   "merged": "2026-06-18T20:27:26+00:00",
+   "summary": "V26 HR Module: E-Verify field for Supporting Document needs to be required"
+  },
+  "intakeVersion": null
+ },
  "CASE-027": {
   "agent": {
    "duration_ms": 836146,
