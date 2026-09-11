@@ -38,6 +38,45 @@
   },
   "intakeVersion": null
  },
+ "CASE-018": {
+  "agent": {
+   "duration_ms": 1316035,
+   "total_cost_usd": 5.129570999999999,
+   "num_turns": 76,
+   "started_at": "2026-09-11T02:53:34Z",
+   "finished_at": "2026-09-11T03:15:34Z"
+  },
+  "files": [
+   "MVP-S/v26/customers/report-management/swifthire-create.cfm"
+  ],
+  "patch_bytes": 1442,
+  "base": {
+   "passed": 3,
+   "total": 4,
+   "summary": "swifthire_request_page_renders_package_dropdown=PASS authorized_account_sees_package_prices=FAIL denied_account_sees_no_prices=PASS option_identities_preserved=PASS"
+  },
+  "human": {
+   "passed": 4,
+   "total": 4,
+   "summary": "swifthire_request_page_renders_package_dropdown=PASS authorized_account_sees_package_prices=PASS denied_account_sees_no_prices=PASS option_identities_preserved=PASS"
+  },
+  "harness": {
+   "passed": 4,
+   "total": 4,
+   "summary": "swifthire_request_page_renders_package_dropdown=PASS authorized_account_sees_package_prices=PASS denied_account_sees_no_prices=PASS option_identities_preserved=PASS"
+  },
+  "batch": "004",
+  "evaluatorNote": null,
+  "humanHours": 2,
+  "meta": {
+   "issue": "OS-6554",
+   "pr": 309,
+   "prTitle": "added price to package options",
+   "merged": "2026-06-08T19:34:05+00:00",
+   "summary": "V26 HR Module: Display package price on SwiftHire orders"
+  },
+  "intakeVersion": null
+ },
  "CASE-020": {
   "agent": {
    "duration_ms": 658925,
