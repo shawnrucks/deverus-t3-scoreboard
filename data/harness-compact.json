@@ -1,4 +1,43 @@
 {
+ "CASE-019": {
+  "agent": {
+   "duration_ms": 260543,
+   "total_cost_usd": 0.9228225000000001,
+   "num_turns": 22,
+   "started_at": "2026-09-11T02:48:27Z",
+   "finished_at": "2026-09-11T02:52:51Z"
+  },
+  "files": [
+   "MVP-S/v26/customers/modern-order/js/validators.js"
+  ],
+  "patch_bytes": 1003,
+  "base": {
+   "passed": 3,
+   "total": 6,
+   "summary": "digits=PASS formatted=PASS country_prefix=FAIL eleven_digits=FAIL international=FAIL required_empty=PASS | supplementary: short=PASS long=PASS letters=FAIL"
+  },
+  "human": {
+   "passed": 6,
+   "total": 6,
+   "summary": "digits=PASS formatted=PASS country_prefix=PASS eleven_digits=PASS international=PASS required_empty=PASS | supplementary: short=FAIL long=FAIL letters=FAIL"
+  },
+  "harness": {
+   "passed": 5,
+   "total": 6,
+   "summary": "digits=PASS formatted=PASS country_prefix=PASS eleven_digits=PASS international=FAIL required_empty=PASS | supplementary: short=PASS long=PASS letters=FAIL"
+  },
+  "batch": "004",
+  "evaluatorNote": null,
+  "humanHours": 6,
+  "meta": {
+   "issue": "OS-6551",
+   "pr": 308,
+   "prTitle": "added code that will accept data from the report table when ordering more:",
+   "merged": "2026-06-08T19:34:36+00:00",
+   "summary": "V26 HR Module: Applicant Phone Number Validation on Order More"
+  },
+  "intakeVersion": null
+ },
  "CASE-020": {
   "agent": {
    "duration_ms": 658925,
