@@ -77,6 +77,48 @@
   },
   "intakeVersion": null
  },
+ "CASE-017": {
+  "agent": {
+   "duration_ms": 1047996,
+   "total_cost_usd": 4.8201055,
+   "num_turns": 63,
+   "started_at": "2026-09-11T03:15:45Z",
+   "finished_at": "2026-09-11T03:33:17Z"
+  },
+  "files": [
+   "MVP-S/v26/customers/modern-order/index.cfm",
+   "MVP-S/v26/customers/modern-order/js/app.js",
+   "MVP-S/v26/customers/modern-order/js/components.js",
+   "MVP-S/v26/customers/modern-order/styles/main.css"
+  ],
+  "patch_bytes": 13889,
+  "base": {
+   "passed": 3,
+   "total": 5,
+   "summary": "package_included_searches_visible_first=PASS optional_searches_hidden_initially=FAIL deliberate_reveal_control_present=FAIL reveal_shows_optional_searches=PASS adding_optional_search_preserves_package=PASS | supplementary: optional_searches_marked_outside_package=FAIL individual_ordering_choices_visible=PASS"
+  },
+  "human": {
+   "passed": 5,
+   "total": 5,
+   "summary": "package_included_searches_visible_first=PASS optional_searches_hidden_initially=PASS deliberate_reveal_control_present=PASS reveal_shows_optional_searches=PASS adding_optional_search_preserves_package=PASS | supplementary: optional_searches_marked_outside_package=FAIL individual_ordering_choices_visible=FAIL"
+  },
+  "harness": {
+   "passed": 5,
+   "total": 5,
+   "summary": "package_included_searches_visible_first=PASS optional_searches_hidden_initially=PASS deliberate_reveal_control_present=PASS reveal_shows_optional_searches=PASS adding_optional_search_preserves_package=PASS | supplementary: optional_searches_marked_outside_package=PASS individual_ordering_choices_visible=PASS"
+  },
+  "batch": "004",
+  "evaluatorNote": null,
+  "humanHours": 22,
+  "meta": {
+   "issue": "OS-6521",
+   "pr": 305,
+   "prTitle": "added code to hide searches not is a paclage",
+   "merged": "2026-06-04T17:33:23+00:00",
+   "summary": "V26 HR Module: Hide Additional Available Searches Behind \u201cShow More\u201d During Package Ordering"
+  },
+  "intakeVersion": null
+ },
  "CASE-020": {
   "agent": {
    "duration_ms": 658925,
