@@ -38,6 +38,50 @@
   },
   "intakeVersion": null
  },
+ "CASE-015": {
+  "agent": {
+   "duration_ms": 976849,
+   "total_cost_usd": 8.259891249999999,
+   "num_turns": 94,
+   "started_at": "2026-09-11T03:41:32Z",
+   "finished_at": "2026-09-11T03:57:52Z"
+  },
+  "files": [
+   "MVP/INCLUDES/results/bank.cfm",
+   "MVP/INCLUDES/results/cocv.cfm",
+   "MVP/INCLUDES/results/cocvx.cfm",
+   "MVP/INCLUDES/results/fdcr.cfm",
+   "MVP/INCLUDES/results/fdcv.cfm",
+   "MVP/INCLUDES/results/swcr.cfm"
+  ],
+  "patch_bytes": 8861,
+  "base": {
+   "passed": 5,
+   "total": 6,
+   "summary": "client_view_masks_dob_on_completed_search=PASS client_view_masks_dob_on_search_still_in_review=FAIL client_view_masks_dob_on_mvr_search=PASS admin_qa_review_view_keeps_full_dob=PASS setting_off_shows_full_dob_to_client=PASS results_render_without_error=PASS"
+  },
+  "human": {
+   "passed": 6,
+   "total": 6,
+   "summary": "client_view_masks_dob_on_completed_search=PASS client_view_masks_dob_on_search_still_in_review=PASS client_view_masks_dob_on_mvr_search=PASS admin_qa_review_view_keeps_full_dob=PASS setting_off_shows_full_dob_to_client=PASS results_render_without_error=PASS"
+  },
+  "harness": {
+   "passed": 5,
+   "total": 6,
+   "summary": "client_view_masks_dob_on_completed_search=PASS client_view_masks_dob_on_search_still_in_review=FAIL client_view_masks_dob_on_mvr_search=PASS admin_qa_review_view_keeps_full_dob=PASS setting_off_shows_full_dob_to_client=PASS results_render_without_error=PASS"
+  },
+  "batch": "003",
+  "evaluatorNote": null,
+  "humanHours": 1,
+  "meta": {
+   "issue": "OS-6530",
+   "pr": 295,
+   "prTitle": "hide dob from hr when in review",
+   "merged": "2026-06-02T19:48:06+00:00",
+   "summary": "Inconsistent DOB Redaction on reports in RiskAware"
+  },
+  "intakeVersion": null
+ },
  "CASE-019": {
   "agent": {
    "duration_ms": 260543,
