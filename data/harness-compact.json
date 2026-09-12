@@ -271,6 +271,45 @@
      "num_turns": 17
     },
     "recordedAt": "2026-09-11T16:10:55.690475+00:00"
+   },
+   "v4-try1": {
+    "process": "v4",
+    "from": null,
+    "feedbackSha256": null,
+    "taskSha256": "0f1aa1ca45a2d5b7aca9eba7e19f8bc64bf7c356b6979c9b8d6d6aac98f783fa",
+    "agent": {
+     "started_at": "2026-09-12T01:57:49Z",
+     "finished_at": "2026-09-12T02:14:18Z",
+     "duration_ms": 996689,
+     "duration_api_ms": 846426,
+     "num_turns": 55,
+     "total_cost_usd": 4.865312,
+     "session_id": "eb1d47ba-bc80-46c0-9f9f-71cc7815013f",
+     "is_error": false,
+     "subtype": "success",
+     "agent_exit": "0",
+     "image": "t3-sandbox:538"
+    },
+    "gate": {
+     "repro_script": true,
+     "repro_before": "REPRO: FAIL",
+     "repro_after": "REPRO: PASS",
+     "acceptance": true,
+     "report": true,
+     "acceptance_items": {
+      "verified": 5,
+      "unobservable": 1,
+      "not_done": 0
+     },
+     "passed": true
+    },
+    "patch_bytes": 0,
+    "patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "files_changed": [
+     "MVP-S/v26/customers/modern-order/api/includes/modern-order-document-visibility.cfm",
+     "MVP-S/v26/customers/modern-order/api/upload-document.cfm"
+    ],
+    "recordedAt": "2026-09-12T02:14:19.090275+00:00"
    }
   }
  },
