@@ -1808,6 +1808,55 @@
      "num_turns": 24
     },
     "recordedAt": "2026-09-11T20:02:53.094028+00:00"
+   },
+   "v4-try1": {
+    "process": "v4",
+    "from": null,
+    "feedbackSha256": null,
+    "taskSha256": "328f4ee243376ac55c0442f2fd98bb3ea72cbcef4cba6dff728f3711dbe8f335",
+    "agent": {
+     "started_at": "2026-09-12T02:54:54Z",
+     "finished_at": "2026-09-12T03:07:48Z",
+     "duration_ms": 769673,
+     "duration_api_ms": 767278,
+     "num_turns": 65,
+     "total_cost_usd": 5.9318462499999995,
+     "session_id": "3b9f24a4-09ab-4685-b950-04203c1ea32e",
+     "is_error": false,
+     "subtype": "success",
+     "agent_exit": "0",
+     "image": "t3-sandbox:538"
+    },
+    "gate": {
+     "repro_script": true,
+     "repro_before": "REPRO: FAIL",
+     "repro_after": "REPRO: PASS",
+     "acceptance": true,
+     "report": true,
+     "acceptance_items": {
+      "verified": 6,
+      "unobservable": 0,
+      "not_done": 0
+     },
+     "passed": true
+    },
+    "patch_bytes": 3746,
+    "patch_sha256": "5752de5e9aabc845704dc5f7e4215078d037dc5dfa4eed2d200b271fab311c5a",
+    "files_changed": [
+     "MVP-S/v26/customers/modern-order/js/api.js",
+     "MVP-S/v26/customers/modern-order/js/app.js"
+    ],
+    "result": {
+     "label": "e1",
+     "passed": 5,
+     "total": 8,
+     "summary": "us_swifthire_government_id=PASS international_dedicated_id=FAIL international_legacy_id=PASS international_dedicated_precedence=FAIL us_ssn_regression=PASS empty_id_no_invention=PASS us_review_country_preserves_id=FAIL international_country_preserves_id=PASS",
+     "image": "t3-sandbox:538",
+     "finished": "2026-09-12T03:07:55Z",
+     "checkSha256": "7533840aa2be5312196782ec1cb40346523d640437a09ebd4fb1248d67f89700"
+    },
+    "outcome": "FAIL",
+    "recordedAt": "2026-09-12T03:07:56.043508+00:00"
    }
   }
  },
