@@ -616,6 +616,55 @@
     },
     "outcome": "FAIL",
     "recordedAt": "2026-09-11T17:27:56.247810+00:00"
+   },
+   "v4-try1": {
+    "process": "v4",
+    "from": null,
+    "feedbackSha256": null,
+    "taskSha256": "b7d2b08f7ad9dcb081821784e2c2541fb72c8bc2d572cca3fa6cd955bdbcc519",
+    "agent": {
+     "started_at": "2026-09-12T01:37:57Z",
+     "finished_at": "2026-09-12T01:57:32Z",
+     "duration_ms": 1182473,
+     "duration_api_ms": 1071877,
+     "num_turns": 66,
+     "total_cost_usd": 7.7812623499999996,
+     "session_id": "b70a7b8e-054d-42e0-814e-86ec5b57ed97",
+     "is_error": false,
+     "subtype": "success",
+     "agent_exit": "0",
+     "image": "t3-sandbox:538"
+    },
+    "gate": {
+     "repro_script": true,
+     "repro_before": "REPRO: FAIL",
+     "repro_after": "REPRO: PASS",
+     "acceptance": true,
+     "report": true,
+     "acceptance_items": {
+      "verified": 6,
+      "unobservable": 2,
+      "not_done": 0
+     },
+     "passed": true
+    },
+    "patch_bytes": 4164,
+    "patch_sha256": "e6399033e0bdd6e9ff5f4a46d6f201953aba4c9d84d07842178f74f4a79063f9",
+    "files_changed": [
+     "MVP/INCLUDES/results/incr.cfm",
+     "MVP/INCLUDES/results/nwws.cfm"
+    ],
+    "result": {
+     "label": "e1",
+     "passed": 5,
+     "total": 6,
+     "summary": "client_view_masks_dob_on_completed_search=PASS client_view_masks_dob_on_search_still_in_review=FAIL client_view_masks_dob_on_mvr_search=PASS admin_qa_review_view_keeps_full_dob=PASS setting_off_shows_full_dob_to_client=PASS results_render_without_error=PASS",
+     "image": "t3-sandbox:538",
+     "finished": "2026-09-12T01:57:41Z",
+     "checkSha256": "b946d2a02cb5ea9657ebfc37c742c05aa53d77aac4ea12cec793709ea5041174"
+    },
+    "outcome": "FAIL",
+    "recordedAt": "2026-09-12T01:57:41.509769+00:00"
    }
   }
  },
