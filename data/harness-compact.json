@@ -407,6 +407,54 @@
      "num_turns": 24
     },
     "recordedAt": "2026-09-11T18:18:22.006922+00:00"
+   },
+   "v4-try1": {
+    "process": "v4",
+    "from": null,
+    "feedbackSha256": null,
+    "taskSha256": "ef6c08d238b0b0d36aa3dac6d2266f4cd2475f413364776ecadb355028cf6d97",
+    "agent": {
+     "started_at": "2026-09-12T01:10:13Z",
+     "finished_at": "2026-09-12T01:37:40Z",
+     "duration_ms": 1656486,
+     "duration_api_ms": 1091501,
+     "num_turns": 90,
+     "total_cost_usd": 8.320023000000003,
+     "session_id": "b3ade3b8-0ac8-44f1-b4c0-d2925022e457",
+     "is_error": false,
+     "subtype": "success",
+     "agent_exit": "0",
+     "image": "t3-sandbox:538"
+    },
+    "gate": {
+     "repro_script": true,
+     "repro_before": "REPRO: FAIL",
+     "repro_after": "REPRO: PASS",
+     "acceptance": true,
+     "report": true,
+     "acceptance_items": {
+      "verified": 5,
+      "unobservable": 1,
+      "not_done": 0
+     },
+     "passed": true
+    },
+    "patch_bytes": 3369,
+    "patch_sha256": "2f027b36f63e93118a9ec96dcfe68535778af784b062b12ec12cb94be8d157a7",
+    "files_changed": [
+     "MVP-S/v26/customers/report-management/applicant-detail.cfm"
+    ],
+    "result": {
+     "label": "e1",
+     "passed": 4,
+     "total": 5,
+     "summary": "detail_page_renders_the_more_info_notes=PASS photo_verification_offers_matching_not_matching_no_image=PASS photo_identification_keeps_legacy_yes_no=FAIL generic_note_keeps_free_text_response=PASS release_form_note_keeps_its_checkbox=PASS",
+     "image": "t3-sandbox:538",
+     "finished": "2026-09-12T01:37:49Z",
+     "checkSha256": "983e3500ea6737ef9141959f09286f939fbb5a0b0fa3d5389ea0103ce3ed2262"
+    },
+    "outcome": "FAIL",
+    "recordedAt": "2026-09-12T01:37:49.772277+00:00"
    }
   }
  },
