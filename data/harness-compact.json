@@ -1347,6 +1347,56 @@
     },
     "outcome": "FAIL",
     "recordedAt": "2026-09-11T19:36:50.068640+00:00"
+   },
+   "v4-try1": {
+    "process": "v4",
+    "from": null,
+    "feedbackSha256": null,
+    "taskSha256": "f428a410da2dd5c508a602c6d64733ea713b83c505029fe6d463b1c7c1caded6",
+    "agent": {
+     "started_at": "2026-09-12T00:39:07Z",
+     "finished_at": "2026-09-12T00:49:15Z",
+     "duration_ms": 601693,
+     "duration_api_ms": 599316,
+     "num_turns": 54,
+     "total_cost_usd": 4.14044575,
+     "session_id": "eccabd75-bd66-4045-90af-2a5f9e1b9e84",
+     "is_error": false,
+     "subtype": "success",
+     "agent_exit": "0",
+     "image": "t3-sandbox:538"
+    },
+    "gate": {
+     "repro_script": true,
+     "repro_before": "REPRO: FAIL",
+     "repro_after": "REPRO: PASS",
+     "acceptance": true,
+     "report": true,
+     "acceptance_items": {
+      "verified": 8,
+      "unobservable": 0,
+      "not_done": 0
+     },
+     "passed": true
+    },
+    "patch_bytes": 9168,
+    "patch_sha256": "aa9c05769000eba2de689d66798dbdd25fdcb556ee6923facac9218b9a8166f2",
+    "files_changed": [
+     "MVP-S/v26/customers/modern-order/js/api.js",
+     "MVP-S/v26/customers/modern-order/js/app.js",
+     "MVP/check_login_status.cfm"
+    ],
+    "result": {
+     "label": "e1",
+     "passed": 12,
+     "total": 12,
+     "summary": "expired_session_on_api_path_returns_json_401=PASS logged_in_api_call_passes_the_guard=PASS legacy_page_still_redirects_to_login=PASS client_reports_expired_session_clearly_over_real_http=PASS client_normal_result_over_real_http=PASS client_normal_json=PASS client_expired_json=PASS client_redirected_login_html=PASS client_server_error_json=PASS client_network_error=PASS client_redirected_successful_json=PASS client_nonlogin_server_error_html=PASS",
+     "image": "t3-sandbox:538",
+     "finished": "2026-09-12T00:49:24Z",
+     "checkSha256": "856897c293c45adeb6863eaef7947a9e67e22390fe47f5602ceed61e1b4ed0ea"
+    },
+    "outcome": "PASS",
+    "recordedAt": "2026-09-12T00:49:24.886610+00:00"
    }
   }
  },
