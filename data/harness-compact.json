@@ -1144,6 +1144,54 @@
      "num_turns": 24
     },
     "recordedAt": "2026-09-11T15:42:32.008876+00:00"
+   },
+   "v4-try1": {
+    "process": "v4",
+    "from": null,
+    "feedbackSha256": null,
+    "taskSha256": "cff54ca822fe10f6f5d6da95c6bc690700d848747129443f14b265da0e568064",
+    "agent": {
+     "started_at": "2026-09-12T02:23:41Z",
+     "finished_at": "2026-09-12T02:54:36Z",
+     "duration_ms": 1865942,
+     "duration_api_ms": 881168,
+     "num_turns": 59,
+     "total_cost_usd": 5.149390749999998,
+     "session_id": "c304dd35-c1eb-4fac-afda-b695186bac24",
+     "is_error": false,
+     "subtype": "success",
+     "agent_exit": "0",
+     "image": "t3-sandbox:538"
+    },
+    "gate": {
+     "repro_script": true,
+     "repro_before": "REPRO: FAIL",
+     "repro_after": "REPRO: PASS",
+     "acceptance": true,
+     "report": true,
+     "acceptance_items": {
+      "verified": 6,
+      "unobservable": 0,
+      "not_done": 0
+     },
+     "passed": true
+    },
+    "patch_bytes": 1704,
+    "patch_sha256": "c8726a58cc43428394b691d2e20b7ccbe63934803342f455243e4577271c8261",
+    "files_changed": [
+     "MVP-S/v26/customers/modern-dashboard/index.cfm"
+    ],
+    "result": {
+     "label": "e1",
+     "passed": 9,
+     "total": 10,
+     "summary": "dashboard_renders_count_tiles=PASS remembered_all_users_view_counts_all_users=PASS remembered_current_user_view_counts_own=PASS configured_all_users_default_with_permission=PASS configured_all_users_default_denied_without_permission=PASS missing_all_users_setting_stays_own=PASS legacy_all_users_default_counts_all_users=PASS no_setting_defaults_to_own=PASS swifthire_tile_shown_when_enabled_even_with_nothing_pending=FAIL swifthire_tile_hidden_when_module_disabled=PASS",
+     "image": "t3-sandbox:538",
+     "finished": "2026-09-12T02:54:46Z",
+     "checkSha256": "d31f88eabe03f675affd768eb0d7b03cb0293dda8694c9fd065515c89fca348b"
+    },
+    "outcome": "FAIL",
+    "recordedAt": "2026-09-12T02:54:46.321037+00:00"
    }
   }
  },
