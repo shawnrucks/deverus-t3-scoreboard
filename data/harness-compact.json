@@ -1927,6 +1927,57 @@
     },
     "outcome": "FAIL",
     "recordedAt": "2026-09-11T20:52:23.949602+00:00"
+   },
+   "v4-try1": {
+    "process": "v4",
+    "from": null,
+    "feedbackSha256": null,
+    "taskSha256": "e03241ea271e68a587dcb42a48da32ac918a4366fdff13667295675386078e80",
+    "agent": {
+     "started_at": "2026-09-12T00:07:37Z",
+     "finished_at": "2026-09-12T00:22:05Z",
+     "duration_ms": 866120,
+     "duration_api_ms": 858809,
+     "num_turns": 75,
+     "total_cost_usd": 7.938157500000003,
+     "session_id": "31cf66a0-7cd1-40c2-8427-50be8653cee0",
+     "is_error": false,
+     "subtype": "success",
+     "agent_exit": "0",
+     "image": "t3-sandbox:538"
+    },
+    "gate": {
+     "repro_script": true,
+     "repro_before": "REPRO: FAIL",
+     "repro_after": "REPRO: PASS",
+     "acceptance": true,
+     "report": true,
+     "acceptance_items": {
+      "verified": 6,
+      "unobservable": 0,
+      "not_done": 0
+     },
+     "passed": true
+    },
+    "patch_bytes": 15745,
+    "patch_sha256": "780c9ba9f929db6aacd7c8b197e6a30b735e34b4dc6b3f92c0881ff4472c0dd7",
+    "files_changed": [
+     "MVP-S/v26/customers/my-account/api/update-profile.cfm",
+     "MVP-S/v26/customers/my-account/includes/edit-user.cfm",
+     "MVP-S/v26/customers/my-account/includes/users.cfm",
+     "MVP-S/v26/customers/my-account/index.cfm"
+    ],
+    "result": {
+     "label": "e1",
+     "passed": 5,
+     "total": 11,
+     "summary": "branch_user_list_shows_that_branch_only=FAIL nested_branch_user_list_works=FAIL unrelated_tenant_list_denied=FAIL edit_form_opens_for_a_branch_user=FAIL edit_form_denied_for_a_foreign_user=FAIL own_account_edit_still_persists=PASS branch_user_edit_persists=PASS nested_branch_user_edit_persists=FAIL foreign_tenant_edit_denied_without_write=PASS invalid_identifier_fails_without_write=PASS pages_render_without_errors=PASS",
+     "image": "t3-sandbox:538",
+     "finished": "2026-09-12T00:22:14Z",
+     "checkSha256": "9c151fd69943411e2bd79e3b1c00e94f294b31331dc820133d32ffd705f26be9"
+    },
+    "outcome": "FAIL",
+    "recordedAt": "2026-09-12T00:22:14.449520+00:00"
    }
   }
  },
