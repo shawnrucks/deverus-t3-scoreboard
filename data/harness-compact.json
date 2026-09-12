@@ -87,6 +87,54 @@
     },
     "outcome": "FAIL",
     "recordedAt": "2026-09-11T19:36:50.153710+00:00"
+   },
+   "v4-try1": {
+    "process": "v4",
+    "from": null,
+    "feedbackSha256": null,
+    "taskSha256": "c05912e8ca6a73158b6927418c7e0e5c59c3f88f8be7390bb1872e1a576e4579",
+    "agent": {
+     "started_at": "2026-09-12T00:22:22Z",
+     "finished_at": "2026-09-12T00:38:49Z",
+     "duration_ms": 985560,
+     "duration_api_ms": 982869,
+     "num_turns": 82,
+     "total_cost_usd": 8.116485500000001,
+     "session_id": "35d2d95e-3339-4bc6-8f55-95851d3e8138",
+     "is_error": false,
+     "subtype": "success",
+     "agent_exit": "0",
+     "image": "t3-sandbox:538"
+    },
+    "gate": {
+     "repro_script": true,
+     "repro_before": "REPRO: FAIL",
+     "repro_after": "REPRO: PASS",
+     "acceptance": true,
+     "report": true,
+     "acceptance_items": {
+      "verified": 7,
+      "unobservable": 0,
+      "not_done": 0
+     },
+     "passed": true
+    },
+    "patch_bytes": 3944,
+    "patch_sha256": "981432a9dcc64974e2129fa2e785152082e91c90130dce362ca7557664dbd62f",
+    "files_changed": [
+     "MVP-S/v26/customers/modern-order/js/app.js"
+    ],
+    "result": {
+     "label": "e1",
+     "passed": 2,
+     "total": 8,
+     "summary": "numbered_i3_drug_code_requires_the_full_profile=FAIL package_i3_drug_code_requires_the_full_profile=FAIL bundle_i3_drug_code_requires_the_full_profile=FAIL custom_i3_drug_code_requires_the_full_profile=FAIL phone_requirement_follows_the_client_setting=FAIL escreen_drug_code_keeps_its_own_set=PASS i3_reason_defaults_to_pre_employment=PASS labcorp_default_reason_matches_an_option_value=FAIL",
+     "image": "t3-sandbox:538",
+     "finished": "2026-09-12T00:38:58Z",
+     "checkSha256": "6cf37add226880b5c9d3a0223e5baf134ca92f269eb105211709c577061b298a"
+    },
+    "outcome": "FAIL",
+    "recordedAt": "2026-09-12T00:38:58.959233+00:00"
    }
   }
  },
