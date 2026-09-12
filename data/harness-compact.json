@@ -880,6 +880,54 @@
      "num_turns": 22
     },
     "recordedAt": "2026-09-11T15:55:02.732436+00:00"
+   },
+   "v4-try1": {
+    "process": "v4",
+    "from": null,
+    "feedbackSha256": null,
+    "taskSha256": "8c1905fb21aecb07b3002a382f7943a945cb14b039ba1ba091afaff22faa2a5f",
+    "agent": {
+     "started_at": "2026-09-12T02:14:26Z",
+     "finished_at": "2026-09-12T02:22:51Z",
+     "duration_ms": 506176,
+     "duration_api_ms": 398413,
+     "num_turns": 47,
+     "total_cost_usd": 2.926073749999999,
+     "session_id": "73026b1b-e9bc-4d22-9fa6-b5d95cf21dc8",
+     "is_error": false,
+     "subtype": "success",
+     "agent_exit": "0",
+     "image": "t3-sandbox:538"
+    },
+    "gate": {
+     "repro_script": true,
+     "repro_before": "REPRO: FAIL",
+     "repro_after": "REPRO: PASS",
+     "acceptance": true,
+     "report": true,
+     "acceptance_items": {
+      "verified": 7,
+      "unobservable": 2,
+      "not_done": 0
+     },
+     "passed": true
+    },
+    "patch_bytes": 1288,
+    "patch_sha256": "7cdfa19a13cf2950dfdade1410a36f532d3c2ffeec81a106eedf7453bdda0447",
+    "files_changed": [
+     "MVP-S/v26/customers/modern-order/js/validators.js"
+    ],
+    "result": {
+     "label": "e1",
+     "passed": 5,
+     "total": 6,
+     "summary": "digits=PASS formatted=PASS country_prefix=PASS eleven_digits=PASS international=FAIL required_empty=PASS | supplementary: short=PASS long=PASS letters=FAIL",
+     "image": "t3-sandbox:538",
+     "finished": "2026-09-12T02:23:33Z",
+     "checkSha256": "2c1960eaa13b67b6f982a3ad4e53be33e95c70b67a1f584a437586140674bb35"
+    },
+    "outcome": "FAIL",
+    "recordedAt": "2026-09-12T02:23:33.474836+00:00"
    }
   }
  },
