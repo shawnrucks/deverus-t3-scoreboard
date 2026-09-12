@@ -2727,6 +2727,54 @@
      "num_turns": 34
     },
     "recordedAt": "2026-09-11T13:13:33.981945+00:00"
+   },
+   "v4-try1": {
+    "process": "v4",
+    "from": null,
+    "feedbackSha256": null,
+    "taskSha256": "c235850a0d480322ea1fbd13fa094d319c4a5831322efb01cca4e3169b4c7025",
+    "agent": {
+     "started_at": "2026-09-12T03:24:50Z",
+     "finished_at": "2026-09-12T03:32:45Z",
+     "duration_ms": 467756,
+     "duration_api_ms": 466071,
+     "num_turns": 36,
+     "total_cost_usd": 2.9656219999999998,
+     "session_id": "728410d3-5ba4-40df-9cbe-676966fce4ba",
+     "is_error": false,
+     "subtype": "success",
+     "agent_exit": "0",
+     "image": "t3-sandbox:538"
+    },
+    "gate": {
+     "repro_script": true,
+     "repro_before": "REPRO: FAIL",
+     "repro_after": "REPRO: PASS",
+     "acceptance": true,
+     "report": true,
+     "acceptance_items": {
+      "verified": 5,
+      "unobservable": 0,
+      "not_done": 0
+     },
+     "passed": true
+    },
+    "patch_bytes": 1990,
+    "patch_sha256": "4c6e7050122549bc68d8e7eec33d50e3cb7f998b16eaabdc2e735ffaa4139830",
+    "files_changed": [
+     "MVP-S/v26/customers/modern-order/js/app.js"
+    ],
+    "result": {
+     "label": "e1",
+     "passed": 7,
+     "total": 8,
+     "summary": "order_more_page_loads_with_applicant_from_report=PASS bundle_in_order_more_runs_the_ssn_trace=PASS trace_addresses_populate_the_county_search=PASS a_la_carte_ssnt_plus_county_in_order_more_behaves_the_same=FAIL order_more_without_ssnt_does_not_run_a_trace=PASS no_duplicate_trace_calls=PASS new_order_bundle_behavior_unchanged=PASS no_page_errors=PASS",
+     "image": "t3-sandbox:538",
+     "finished": "2026-09-12T03:33:32Z",
+     "checkSha256": "8bc4f3c4449683a76e5bef37e7a5cf2ed2afd6adf9161a514c4716ae28c74962"
+    },
+    "outcome": "FAIL",
+    "recordedAt": "2026-09-12T03:33:32.965042+00:00"
    }
   }
  },
