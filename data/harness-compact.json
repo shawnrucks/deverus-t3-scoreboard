@@ -3222,6 +3222,40 @@
     },
     "patch_bytes": 0,
     "recordedAt": "2026-09-11T18:18:33.878828+00:00"
+   },
+   "v4-try1": {
+    "process": "v4",
+    "from": null,
+    "feedbackSha256": null,
+    "taskSha256": "5a1d47ec15f373b8d338c96a9f65e43ddab7a813ef20d7f6303d49cf05a3ea5d",
+    "agent": {
+     "started_at": "2026-09-12T03:33:52Z",
+     "finished_at": "2026-09-12T03:33:55Z",
+     "duration_ms": null,
+     "duration_api_ms": null,
+     "num_turns": null,
+     "total_cost_usd": null,
+     "session_id": null,
+     "is_error": null,
+     "subtype": null,
+     "agent_exit": null,
+     "image": "t3-sandbox:538"
+    },
+    "gate": {
+     "repro_script": false,
+     "repro_before": "missing",
+     "repro_after": "missing",
+     "acceptance": false,
+     "report": false,
+     "acceptance_items": {
+      "verified": 0,
+      "unobservable": 0,
+      "not_done": 0
+     },
+     "passed": false
+    },
+    "patch_bytes": 0,
+    "recordedAt": "2026-09-12T03:33:55.461706+00:00"
    }
   }
  },
